@@ -5,7 +5,7 @@ export default function Home() {
     <div className="flex flex-col pt-[20vh]">
 
       <Head>
-        <title>Pubarun's Portfolio</title>
+        <title>Pubarun&lsquo;s Portfolio</title>
       </Head>
 
       <h1 className="text-3xl md:text-5xl justify-center flex">Website Launching Soon 🚀</h1>
