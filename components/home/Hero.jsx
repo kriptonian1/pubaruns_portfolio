@@ -26,8 +26,8 @@ const Hero = () => {
     <div >
       <Navbar />
 
-      <a href='https://www.forbes.com/profile/pubarun-basu/' rel="noreferrer" target={'_blank'} className='right-0 top-[80vh] fixed translate-y-[-25vh]'>
-        <ForbTag />
+      <a href='https://www.forbes.com/profile/pubarun-basu/' rel="noreferrer" target={'_blank'} className='right-0 top-[80vh] md:top-[70vh]  fixed translate-y-[-25vh]'>
+        <ForbTag className=''/>
       </a>
 
 

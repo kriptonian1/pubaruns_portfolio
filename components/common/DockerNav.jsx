@@ -3,8 +3,8 @@ import React from 'react'
 
 const DockerNav = ({isVisible}) => {
     return (
-        <div className='flex justify-center '>
-            <nav style={{ visibility: isVisible ? 'visible' : 'hidden' }} className={`fixed items-center transition-all duration-200  ${isVisible?'opacity-100':'opacity-0'}  shadow-2xl flex gap-7 text-[#DCDCDC] bg-[#3e3e3ecc] border-[10px] backdrop-blur-lg px-[15px] py-[5px] border-[#0000001a] rounded-[20px]`}>
+        <div className='flex justify-center pb-[50vh]'>
+            <nav style={{ visibility: isVisible ? 'visible' : 'hidden' }} className={`fixed items-center bottom-5 transition-all duration-200  ${isVisible?'opacity-100':'opacity-0'}  shadow-2xl flex gap-7 text-[#DCDCDC] bg-[#3e3e3ecc] border-[10px] backdrop-blur-lg px-[15px] py-[5px] border-[#0000001a] rounded-[20px]`}>
                 <Link href='/'>
                     <div className='py-[10px] transition-all rounded-md text-[#3D3D3D] font-semibold bg-[#DCDCDC] px-[10px]'>
                         Home
