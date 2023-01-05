@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../Navbar'
+import Navbar from '../common/Navbar'
 import { Montserrat, Poppins } from '@next/font/google'
 import { ArrowLinkIcon, BirlaAww, ForbsLogo, ForbTag, heroCamera, IndicaAww, SonyAww, Thinstar } from './assets'
 import Image from 'next/image'
@@ -32,7 +32,7 @@ const Hero = () => {
         target={"_blank"}
         className=""
       >
-        <ForbTag className="right-0 top-[80vh] md:top-[70vh] absolute w-[100px]" />
+        <ForbTag className="right-0 bottom-[10vh] fixed" />
       </a>
 
       {/* Sidebar social */}
