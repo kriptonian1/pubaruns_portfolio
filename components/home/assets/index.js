@@ -16,6 +16,9 @@ import Edugraph_Logo from "./Edugraph_Logo.png";
 import SonyWPO_Logo from "./SonyWPO_Logo.png";
 import LinkLogo from "./linkLogo.svg";
 
+// photos
+import photo1 from "./PubarunBasu7.jpg";
+
 export {
   Thinstar,
   heroCamera,
@@ -32,4 +35,5 @@ export {
   Edugraph_Logo,
   SonyWPO_Logo,
   LinkLogo,
+  photo1,
 };

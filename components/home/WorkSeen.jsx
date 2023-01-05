@@ -20,7 +20,7 @@ const WorkSeen = () => {
 
             <div className='flex items-center justify-between'>
                 <HeadLinesHome title={"WORKS SEEN & FEATURED ON"} />
-                <Link className='flex text-sm underline font-semibold hover:-translate-y-1 hover:scale-110 duration-700 transition ease-in-out delay-150' href="/work">
+                <Link className='flex text-sm underline items-center font-semibold hover:-translate-y-1 hover:scale-110 duration-700 transition ease-in-out delay-150' href="/work">
                     VIEW ALL<LinkLogo />
                 </Link>
             </div>
