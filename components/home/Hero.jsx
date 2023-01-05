@@ -23,22 +23,25 @@ const poppins = Poppins(
 const Hero = () => {
 
   return (
-    <div >
+    <div>
       <Navbar />
 
-      <a href='https://www.forbes.com/profile/pubarun-basu/' rel="noreferrer" target={'_blank'} className='right-0 top-[80vh] md:top-[70vh]  fixed translate-y-[-25vh]'>
-        <ForbTag className=''/>
+      <a
+        href="https://www.forbes.com/profile/pubarun-basu/"
+        rel="noreferrer"
+        target={"_blank"}
+        className=""
+      >
+        <ForbTag className="right-0 top-[80vh] md:top-[70vh] absolute w-[100px]" />
       </a>
 
-
       {/* Sidebar social */}
-      <div className='flex flex-col gap-5 items-center h-[1vh]  absolute top-[10rem] left-0 transform-gpu'>
-        <div className='border border-[#333333] absolute pr-[10rem] z-[-10rem] w-[12rem] h-0 transform -rotate-90'></div>
-        <div className='flex items-center flex-col gap-[6rem] px-[3vw] py-[3vh]  bg-[#DCDCDC] z-[1]'>
-          <div className='transform -rotate-90 bg-[#DCDCDC] pr-5'>FORBES</div>
-          <div className='transform -rotate-90'>FACEBOOK</div>
-          <div className='transform -rotate-90'>INSTAGRAM</div>
-
+      <div className="flex flex-col gap-5 items-center h-[1vh]  absolute top-[10rem] left-0 transform-gpu">
+        <div className="border border-[#333333] absolute pr-[10rem] z-[-10rem] w-[12rem] h-0 transform -rotate-90"></div>
+        <div className="flex items-center flex-col gap-[6rem] px-[3vw] py-[3vh]  bg-[#DCDCDC] z-[1]">
+          <div className="transform -rotate-90 bg-[#DCDCDC] pr-5">FORBES</div>
+          <div className="transform -rotate-90">FACEBOOK</div>
+          <div className="transform -rotate-90">INSTAGRAM</div>
         </div>
         <div>
           <Thinstar />
@@ -46,54 +49,46 @@ const Hero = () => {
       </div>
 
       {/* content main */}
-      <div className='flex flex-col space-y-10'>
-        <div className='flex justify-center'>
-          <div className={` ${montserrat.variable} text-[#333333] pl-[15vw] pr-[10vw] font-Montserrat  pt-[13vh] z-[50rem]`}>
-            <div className=''>
-              <div className='text-6xl'>
-                Hello,
-              </div>
-              <div className='text-9xl font-medium'>
-                I am Pubarun.
-              </div>
+      <div className="flex flex-col space-y-10">
+        <div className="flex justify-center">
+          <div
+            className={` ${montserrat.variable} text-[#333333] pl-[15vw] pr-[10vw] font-Montserrat  pt-[13vh] z-[50rem]`}
+          >
+            <div className="">
+              <div className="text-6xl">Hello,</div>
+              <div className="text-9xl font-medium">I am Pubarun.</div>
             </div>
 
-            <div className={`${poppins.variable} font-Poppins w-[30vw] text-xl font-medium text-black pt-7`}>
-              I am a professional photographer dedicated to capturing the beauty and emotion of each moment.
+            <div
+              className={`${poppins.variable} font-Poppins w-[30vw] text-xl font-medium text-black pt-7`}
+            >
+              I am a professional photographer dedicated to capturing the beauty
+              and emotion of each moment.
             </div>
-            
-
           </div>
 
-          <Image src={heroCamera} alt='hero' className='md:w-[20rem] lg:w-[30vw]' />
+          <Image
+            src={heroCamera}
+            alt="hero"
+            className="md:w-[20rem] lg:w-[30vw]"
+          />
         </div>
 
-        <div className='flex items-baseline m-9 gap-[5vw] pl-[18vw]'>
+        <div className="flex items-baseline m-9 gap-[5vw] pl-[18vw]">
           <SonyAww />
           <BirlaAww />
           <IndicaAww />
 
-          <Link href='/about'>
-            <div className='flex space-x-2 text-sm font-semibold pb-9 hover:-translate-y-1 hover:scale-110 duration-700 transition ease-in-out delay-150'>
-              <span className='border-b-2  border-[#222222]'> CHECK ALL</span>
+          <Link href="/about">
+            <div className="flex space-x-2 text-sm font-semibold pb-9 hover:-translate-y-1 hover:scale-110 duration-700 transition ease-in-out delay-150">
+              <span className="border-b-2  border-[#222222]"> CHECK ALL</span>
               <ArrowLinkIcon />
             </div>
           </Link>
-
-
         </div>
-
       </div>
-
-
-
-
-
-
-
-
     </div>
-  )
+  );
 }
 
 export default Hero
