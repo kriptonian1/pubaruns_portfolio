@@ -1,7 +1,8 @@
 import Hero from "./home/Hero";
+import PhotoSection from "./home/PhotoSection";
 import WorkSeen from "./home/WorkSeen";
-import Navbar from "./Navbar";
-import Navbar from "./common/Navbar";
 
 
-export { Navbar, Hero, WorkSeen};
+
+
+export { Hero, WorkSeen, PhotoSection};

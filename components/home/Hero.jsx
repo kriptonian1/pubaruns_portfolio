@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../common/Navbar'
 import { Montserrat, Poppins } from '@next/font/google'
 import { ArrowLinkIcon, BirlaAww, ForbsLogo, ForbTag, heroCamera, IndicaAww, SonyAww, Thinstar } from './assets'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Navbar } from '../common'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -55,8 +55,8 @@ const Hero = () => {
             className={` ${montserrat.variable} text-[#333333] pl-[15vw] pr-[10vw] font-Montserrat  pt-[13vh] z-[50rem]`}
           >
             <div className="">
-              <div className="text-6xl">Hello,</div>
-              <div className="text-9xl font-medium">I am Pubarun.</div>
+              <div className="xl:text-5xl md:text-4xl">Hello,</div>
+              <div className=" md:text-7xl font-medium">I am Pubarun.</div>
             </div>
 
             <div
