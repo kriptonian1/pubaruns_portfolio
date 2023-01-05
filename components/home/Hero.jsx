@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../common/Navbar'
+import Navbar from '../Navbar'
 import { Montserrat, Poppins } from '@next/font/google'
 import { ArrowLinkIcon, BirlaAww, ForbsLogo, ForbTag, heroCamera, IndicaAww, SonyAww, Thinstar } from './assets'
 import Image from 'next/image'

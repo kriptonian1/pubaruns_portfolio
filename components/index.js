@@ -1,4 +1,4 @@
 import Hero from "./home/Hero";
-import Navbar from "./common/Navbar";
+import Navbar from "./Navbar";
 
 export { Navbar, Hero};
