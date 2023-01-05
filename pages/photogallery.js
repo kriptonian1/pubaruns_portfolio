@@ -1,11 +1,13 @@
-import React from 'react'
-import { DockerNav } from '../components/common'
+import React from "react";
+import { DockerNav } from "../components/common";
 
-export const photogallery = () => {
+const photogallery = () => {
   return (
-    <div>photogallery
-         <DockerNav/>
+    <div>
+      photogallery
+      <DockerNav />
     </div>
+  );
+};
 
-  )
-}
+export default photogallery;
