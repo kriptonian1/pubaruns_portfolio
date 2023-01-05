@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import { Hero } from "../components";
+import { Hero, WorkSeen } from "../components";
 import { DockerNav } from "../components/common";
 
 export default function Home() {
@@ -35,6 +35,7 @@ export default function Home() {
       </Head>
 
       <Hero />
+      <WorkSeen />
       {isVisible ? <DockerNav isVisible={isVisible}/> : null}
       <div className="h-[100vh]"></div>
     </div>
