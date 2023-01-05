@@ -26,6 +26,11 @@ const Hero = () => {
     <div >
       <Navbar />
 
+      <a href='https://www.forbes.com/profile/pubarun-basu/' rel="noreferrer" target={'_blank'} className='right-0 top-[80vh] fixed translate-y-[-25vh]'>
+        <ForbTag />
+      </a>
+
+
       {/* Sidebar social */}
       <div className='flex flex-col gap-5 items-center h-[1vh]  absolute top-[10rem] left-0 transform-gpu'>
         <div className='border border-[#333333] absolute pr-[10rem] z-[-10rem] w-[12rem] h-0 transform -rotate-90'></div>
@@ -82,9 +87,6 @@ const Hero = () => {
 
 
 
-      <a href='https://www.forbes.com/profile/pubarun-basu/' rel="noreferrer" target={'_blank'} className='right-0 fixed translate-y-[-25vh]'>
-        <ForbTag />
-      </a>
 
 
 
