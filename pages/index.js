@@ -1,22 +1,42 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
+import { Hero } from "../components";
+import { DockerNav } from "../components/common";
 
 export default function Home() {
-  return (
-    <div className="flex flex-col pt-[20vh]">
+  
 
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the user has scrolled past a certain point
+      if (window.scrollY > 100) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    // Add the event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div className="">
       <Head>
         <title>Pubarun&lsquo;s Portfolio</title>
       </Head>
 
-      <h1 className="text-3xl md:text-5xl justify-center flex">Website Launching Soon 🚀</h1>
-      <div className="flex p-10 justify-center">
-        Dear Pubarun, <br />
-        Thank you for your patience as we work to get your
-        photography portfolio website ready. <br /> We are hard at work creating a
-        beautiful portfolio for you to showcase your talents. <br /> We appreciate your
-        understanding and support as we get everything in place. We can&lsquo;t wait
-        to show you the final product! <br /> Sincerely, <br /> The Team
-      </div>
+      <Hero />
+      {isVisible ? <DockerNav isVisible={isVisible}/> : null}
+      <div className="h-[100vh]"></div>
     </div>
   );
 }
