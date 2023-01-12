@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import { SideSection } from '../components'
 import { DockerNav, Navbar } from '../components/common'
 
 const work = () => {
@@ -9,7 +10,7 @@ const work = () => {
             <title> Works and Featured on | Pubarun&lsquo;s Portfolio</title>
         </Head>
         <Navbar />
-        work
+        <SideSection />
         <DockerNav isVisible={true}/>
     </>
   )
