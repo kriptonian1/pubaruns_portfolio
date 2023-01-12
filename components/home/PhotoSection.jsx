@@ -36,7 +36,7 @@ const PhotoSection = () => {
 
                 <div>
                     <div>
-                        <div className='w-[50vw] pt-[10vh] translate-x-[-7vw] text-3xl font-medium '>
+                        <div className='w-[50vw] pt-[10vh] pl-6 text-3xl font-medium '>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu fermentum dui.
                         </div>
                         <div className='pl-[4rem] text-lg  w-[50vw] pt-6' >
