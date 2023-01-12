@@ -5,8 +5,8 @@ import React from 'react';
 
 const Custom404 = () => {
   return (
-    <main class="h-screen w-full flex flex-col justify-center items-center bg-[#DCDCDC]">
-      <h1 class="text-9xl font-extrabold text-[#333333] tracking-widest">
+    <main className="h-screen w-full flex flex-col justify-center items-center bg-[#DCDCDC]">
+      <h1 className="text-9xl font-extrabold text-[#333333] tracking-widest">
         Error
       </h1>
       <Image src={ErrorPic} alt="hero" className="md:w-[20rem] lg:w-[30vw]" />
