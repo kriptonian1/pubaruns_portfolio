@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({isFixed}) => {
   return (
-    <div className='px-[3vw]'>
-      <Link href={"/"}>
-        <div className='text-[#333333] text-2xl font-semibold py-6 px-[5vw]'>PUBARUN BASU</div>
-      </Link>
+    <div className={`${() => { return (isFixed ? "fixed": "")}} px-[3vw] `}>
+      <div className='text-[#333333] text-2xl font-semibold py-6 px-[5vw]'>
+        <Link href={"/"} >PUBARUN BASU</Link>
+      </div>
 
       <div className='border border-[#828282]'></div>
     </div>

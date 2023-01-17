@@ -20,7 +20,7 @@ const SideSection = () => {
         return "w-[100px]";
     }
     return (
-        <div className="flex">
+        <div className="flex ">
             <div className='fixed mt-[13vh] gap-[8vw] flex flex-col left-0 text-[#373737]'>
 
                 <div onClick={() => setIsSelected("awards")} className={`${scaleonSelect(isSelected === "awards")} flex cursor-pointer items-center text-lg font-semibold`}>
@@ -45,7 +45,7 @@ const SideSection = () => {
 
                 </div>
             </div>
-            <div className=" absolute left-[40vw] border border-[#000000] w-0 h-[84vh] my-4 "></div>
+            <div className="fixed  left-[40vw] border border-[#000000] w-0 h-[84vh] my-4 "></div>
         </div>
 
     )
