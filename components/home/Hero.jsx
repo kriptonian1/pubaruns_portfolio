@@ -50,7 +50,7 @@ const Hero = () => {
 
       {/* content main */}
       <div className="flex flex-col space-y-10">
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center">
           <div
             className={` ${montserrat.variable} text-[#333333] pl-[15vw] pr-[10vw] font-Montserrat  pt-[13vh] z-[50rem]`}
           >
@@ -70,7 +70,7 @@ const Hero = () => {
           <Image
             src={heroCamera}
             alt="hero"
-            className="md:w-[20rem] lg:w-[30vw]"
+            className="md:w-[20rem] lg:w-[30vw] translate-y-[5rem]"
           />
         </div>
 
