@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         Montserrat: ['var(--font-montserrat)'],
         Poppins: ['var(--font-poppins)'],
+        Prata: ['var(--font-prata)'],
       }
     },
   },
