@@ -3,5 +3,17 @@
     "date": "7th Aug, 2022",
     "description": "The photo series portrays the journey to freedom for the Ramnamis, a lower caste tribe in India, and the permanent tattoos ....",
     "image": "/projects/assets/projectThumb.png",
-    "slug": "Wangala"
+    "slug": "Wangala",
+    "theme": "",
+    "location_Name": "Janjgir-Champa, Chhattisgarh, India",
+    "location_link": "https://goo.gl/maps/XPymcAMD4ykLicoq9",
+    "images": [
+        "/projects/assets/projectThumb.png",
+        "/projects/assets/projectThumb1.png",
+        "/projects/assets/01_The Flow of Civilization.jpg",
+        "/projects/assets/projectThumb2.png",
+        "/projects/assets/projectThumb3.png",
+        "/projects/assets/projectThumb3.png",
+        "/projects/assets/projectThumb3.png"
+    ]
 }
