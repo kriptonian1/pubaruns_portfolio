@@ -35,14 +35,22 @@ function EachProject({ source }) {
             </Head>
             <Navbar isFixed={true} />
 
-            <div className='container mx-auto bg-green-900 h-10'>
+            <div className='container mx-auto bg-green-900 '>
                 <div className='container mx-auto'>
                     <Image
-                        src={'/public/projects/assets/'}
+                        src={source.image}
                         alt="Picture of the author"
                         width={500}
                         height={500}
                     />
+                    <div>
+                        <h1 className='text-4xl font-bold'>{source.title}</h1>
+                        <p className='text-2xl'>{source.date}</p>
+                        <p className='text-2xl'>{source.description}</p>
+                        <p className='text-2xl'>{source.image}</p>
+                        <p className='text-2xl'>{source.slug}</p>
+
+                    </div>
                 </div>
 
             </div>
