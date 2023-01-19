@@ -1,0 +1,65 @@
+{
+    "title": "IN THE NAME OF GOD",
+    "date": "7th Aug, 2022",
+    "description": "The photo series portrays the journey to freedom for the Ramnamis, a lower caste tribe in India, and the permanent tattoos ....",
+    "image": "/projects/In the Name of God/Additional/Header Image.jpg",
+    "slug": "Wangala",
+    "location_Name": "Janjgir-Champa, Chhattisgarh, India",
+    "location_link": "https://goo.gl/maps/XPymcAMD4ykLicoq9",
+    "quote": "Rediscovering the Road to Freedom of the Ramnamis",
+    "subquote": "The Road to Freedom for the Ramnamis",
+    "theme": [
+        "<b>Freedom</b> from <b>Religious Chauvinism</b> and <b>Caste Hierarchy</b>",
+        "Rediscovering <b>Indigenous History</b>",
+        "The Fight for <b>Social Inclusion</b>"
+    ],
+    "commissioned_by": "Goethe Institut India",
+    "commissioned_link": "https://www.goethe.de/ins/in/en/kul/soc/fre/23589464.html",
+    "inassociation_with": null,
+    "inassociation_link": null,
+    "featuredimage": "/projects/In the Name of God/01_Marks of Resistance.jpg",
+    "category": [{
+            "title": null,
+            "description": "The Ramnami sect has been burdened with a history of systematic oppression ever since the Mughal era. As members of the lower caste, the tribal people were denied entry into temples and treated as untouchables throughout centuries. Following a series of events that took away the freedom of practicing their religion, the tribe was pushed to the limits of socio-political hegemonic tyranny. The indigenous identity of this ethnic group was stripped off of them by the upper caste communities. The late 19th century witnessed the rise of a hero in the name of Parasuram, who emerged from the ashes of mutiny and started the Ramnami sect as an act of defiance against the casteist regime. The name of ' Ram ' was tattooed on the bare skin of all the members of the tribe, to prove a silent but powerful message that God is omnipresent.",
+            "image": [
+                "/projects/In the Name of God/02_Symbols.jpg",
+                "/projects/In the Name of God/03_Reflections.jpg",
+                "/projects/In the Name of God/04_The Upasak.jpg"
+            ]
+        },
+        {
+            "title": "",
+            "description": "Their white attires were also decorated with the name of Ram, while the peacock feathers on their headgear held a rich mythological significance. Although a stigma surrounding the lower caste tribes continues to loom upon the people, the journey to freedom for the Ramnamis has been resolved into a peaceful conclusion. As a result, the younger generation finds it unnecessary to follow the customs that were once institutionalized by their elders. The tattoos have started fading away with time, as have their significance. Yet, they remain etched on the skins as a permanent reminder of the struggle of independence of the Ramnamis.",
+            "image": [
+                "/projects/assets/projectThumb.png",
+                "/projects/assets/projectThumb1.png",
+                "/projects/assets/01_The Flow of Civilization.jpg",
+                "/projects/assets/projectThumb2.png",
+                "/projects/assets/projectThumb3.png",
+                "/projects/assets/projectThumb3.png",
+                "/projects/assets/projectThumb3.png"
+            ]
+        }, {
+            "title": "",
+            "description": "The Ramnami sect has been burdened with a history of systematic oppression ever since the Mughal era. As members of the lower caste, the tribal people were denied entry into temples and treated as untouchables throughout centuries. Following a series of events that took away the freedom of practicing their religion, the tribe was pushed to the limits of socio-political hegemonic tyranny. The indigenous identity of this ethnic group was stripped off of them by the upper caste communities. The late 19th century witnessed the rise of a hero in the name of Parasuram, who emerged from the ashes of mutiny and started the Ramnami sect as an act of defiance against the casteist regime. The name of 'Ram' was tattooed on the bare skin of all the members of the tribe, to prove a silent but powerful message that God is omnipresent.",
+            "image": [
+                "/projects/assets/projectThumb.png",
+                "/projects/assets/projectThumb1.png",
+                "/projects/assets/01_The Flow of Civilization.jpg",
+                "/projects/assets/projectThumb2.png",
+                "/projects/assets/projectThumb3.png",
+                "/projects/assets/projectThumb3.png",
+                "/projects/assets/projectThumb3.png"
+            ]
+        }
+    ],
+    "images": [
+        "/projects/assets/projectThumb.png",
+        "/projects/assets/projectThumb1.png",
+        "/projects/assets/01_The Flow of Civilization.jpg",
+        "/projects/assets/projectThumb2.png",
+        "/projects/assets/projectThumb3.png",
+        "/projects/assets/projectThumb3.png",
+        "/projects/assets/projectThumb3.png"
+    ]
+}
