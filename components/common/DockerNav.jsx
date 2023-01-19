@@ -42,7 +42,7 @@ const DockerNav = ({ isVisible }) => {
                     </div>
                 </Link>
 
-                <Link href='/project'>
+                <Link href='/projects'>
                     <div className={`${highlightOnRoute(currrentRoute === '/projects')} py-[10px] transition-all hover:bg-[#00000046] rounded-md text-[] font-semibold bg-[] px-[10px]`}>
                         Projects
                     </div>
