@@ -52,6 +52,7 @@ function EachProject({ source }) {
                 <div className='absolute inset-0 text-center flex flex-col justify-center items-center gap-5'>
                     <h1 className='text-4xl font-bold text-white font-Prata'>{source.title}</h1>
                     <p className='text-xl italic text-white font-Poppins'>A photo Series by <span className='not-italic text-4xl pl-2 text-slate-300'>Pubarun Basu</span></p>
+                    <p className=' text-white font-Poppins'>{source.date}</p>
                 </div>
                 <div className='absolute bottom-1 p-10 flex justify-between items-center'>
                     <div className='flex justify-around items-end'>
@@ -96,11 +97,30 @@ function EachProject({ source }) {
             </div>
             {
                 source.category.map((item, index) => (
-                    <>
-                    </>
+                    <div className='p-10 flex flex-col container mx-auto justify-center items-center' key={index}>
+                        <h1>{item.title}</h1>
+                        <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
+                        <div>
+                            <p className='text-2xl font-Poppins text-center px-10 font-normal'>{item.description}</p>
+                        </div>
+                        <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
+
+                        <PhotoProvider>
+                            <div className="columns-2 gap-3 w-[1000px] mx-auto space-y-3 pb-20">
+                                {item.image.map((item, index) => (
+                                    <PhotoView key={index} src={item}>
+                                        <div className='break-inside-avoid'>
+                                            <img src={item} alt="featured_image" className='rounded-md drop-shadow-2xl' />
+                                        </div>
+                                    </PhotoView>
+                                ))}
+                            </div>
+                        </PhotoProvider>
+
+                    </div>
                 ))
             }
-            <div className='p-10 flex flex-col container mx-auto justify-center items-center'>
+            {/* <div className='p-10 flex flex-col container mx-auto justify-center items-center'>
                 <h1>{source.category[0].title}</h1>
                 <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
                 <div>
@@ -119,10 +139,8 @@ function EachProject({ source }) {
                         ))}
                     </div>
                 </PhotoProvider>
-
-            </div>
-
-            <div className='container mx-auto -green-900 pt-10 text-white'>
+            </div> */}
+            {/* <div className='container mx-auto -green-900 pt-10 text-white'>
                 <PhotoProvider>
                     <div className="columns-3 gap-3 w-[1000px] mx-auto space-y-3 pb-28">
                         {source.images.map((item, index) => (
@@ -134,9 +152,16 @@ function EachProject({ source }) {
                         ))}
                     </div>
                 </PhotoProvider>
-
-            </div>
-
+            </div> */}
+            <PhotoProvider>
+                <div className="columns-1 gap-3 w-[1000px] mx-auto space-y-3 pb-20">
+                    <PhotoView src={source.footerimage}>
+                        <div className='break-inside-avoid'>
+                            <img src={source.footerimage} alt="featured_image" className='rounded-md drop-shadow-2xl' />
+                        </div>
+                    </PhotoView>
+                </div>
+            </PhotoProvider>
         </div>
     )
 }
