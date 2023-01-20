@@ -1,6 +1,6 @@
 import React from "react";
 import { DockerNav, Navbar } from "../components/common";
-import { getPaths } from "../lib/gallery";
+// import { getPaths } from "../lib/gallery";
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import Image from "next/image";
@@ -129,7 +129,7 @@ const Gallery = () => {
         </PhotoProvider>
 
       </div>
-      <DockerNav />
+      <DockerNav isVisible={true} />
     </div >
   );
 };
