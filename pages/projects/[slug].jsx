@@ -131,12 +131,15 @@ function EachProject({ source }) {
                         </div>
                         <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
 
-                        <PhotoProvider>
+                        <PhotoProvider
+                            speed={() => 800}
+                            easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
+                        >
                             <div className="lg:columns-2 gap-5 lg:w-[1300px] mx-auto space-y-3 pb-20">
                                 {item.image.map((item, index) => (
                                     <PhotoView key={index} src={item}>
                                         <div className='break-inside-avoid'>
-                                            <img src={item} alt="featured_image" className='rounded-md drop-shadow-2xl' />
+                                            <img src={item} alt="featured_image" className='rounded-md drop-shadow-2xl cursor-grab' />
                                         </div>
                                     </PhotoView>
                                 ))}
