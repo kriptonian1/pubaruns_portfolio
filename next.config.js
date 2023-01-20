@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   webpack(config) {
+    fs: 'empty'
     config.module.rules.push({
       test: /\.svg$/i,
       issuer: /\.[jt]sx?$/,
