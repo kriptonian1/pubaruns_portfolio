@@ -38,7 +38,7 @@ function EachProject({ source }) {
             <Navbar isFixed={true} />
 
 
-            <div className='conatiner  bg-black mt-10 mx-16 rounded-md relative'>
+            <div className='conatiner mx-auto bg-black mt-10 lg:mx-16 rounded-md relative'>
 
                 <Image
 
@@ -49,9 +49,9 @@ function EachProject({ source }) {
                     className='object-cover w-full lg:h-[30rem] opacity-50 rounded-md bg-center '
                 />
 
-                <div className='absolute inset-0 text-center flex flex-col justify-center items-center gap-5'>
-                    <h1 className='text-8xl leading-[117px] font-black text-white font-Bodoni'>{source.title}</h1>
-                    <p className='text-xl italic text-white font-Poppins'>A photo Series by <span className='not-italic text-4xl pl-2 text-slate-300'>Pubarun Basu</span></p>
+                <div className='absolute inset-0 text-center flex flex-col justify-center items-center gap-0'>
+                    <h1 className='lg:text-8xl text-2xl leading-[117px] font-black text-white font-Bodoni'>{source.title}</h1>
+                    <p className='lg:text-xl italic text-white font-Poppins'>A photo Series by <span className='not-italic lg:text-4xl text-2xl pl-2 text-slate-300'>Pubarun Basu</span></p>
                     <p className=' text-white font-Poppins'>{source.date}</p>
                 </div>
                 <div className='absolute bottom-1 p-10  w-full'>
@@ -72,35 +72,50 @@ function EachProject({ source }) {
                     </div>
                 </div>
             </div>
-            <div className='p-10 flex flex-row container mx-auto justify-between items-start'>
-                <div className='basis-3/5   text-black p-10 pt-16 '>
+            <div className='lg:p-10 pt-10 flex lg:flex-row flex-col container mx-auto justify-between items-start'>
+                <div className='lg:basis-3/5   text-black lg:p-10 pt-16 '>
                     <div className='border-l-4 border-black px-10' >
-                        <p className=' font-Montserrat font-semibold text-6xl pr-40'>{source.quote}</p>
+                        <p className=' font-Montserrat font-semibold lg:text-6xl  text-3xl pr-40'>{source.quote}</p>
                         <p className=' font-Poppins font-normal mt-5 text-xl'>{source.subquote}</p>
                     </div>
                     <div className='pt-24'>
-                        <h1 className='text-3xl font-Poppins font-semibold pb-5'>THEMES</h1>
+                        <h1 className='lg:text-3xl text-2xl font-Poppins font-semibold pb-5'>THEMES</h1>
                         <div className='ml-5'>
                             {
                                 source.theme.map((item, index) => (
-                                    <li className='font-Poppins font-normal text-2xl' key={index} dangerouslySetInnerHTML={{ __html: item }} />
+                                    <li className='font-Poppins font-normal lg:text-2xl text-xl' key={index} dangerouslySetInnerHTML={{ __html: item }} />
                                 ))
 
                             }
                         </div>
                         <div className='border border-[#000000] h-1 bg-black mt-12 w-[10vw] ml-[1rem] mb-16' />
+                        {
+                            source.commissioned_by && (
 
-                        <p className='text-2xl italic font-Poppins '>Commissioned by  <span className='font-bold not-italic hover:underline-offset-2 underline cursor-pointer' onClick={
-                            () => {
-                                window.open(source.commissioned_link, '_blank')
-                            }
+                                <p className='text-2xl italic font-Poppins '>Commissioned by  <span className='font-bold not-italic hover:underline-offset-2 underline cursor-pointer' onClick={
+                                    () => {
+                                        window.open(source.commissioned_link, '_blank')
+                                    }
 
-                        }>{source.commissioned_by}</span></p>
+                                }>{source.commissioned_by}</span></p>
+                            )
+                        }
+                        {
+                            source.inassociation_with && (
+
+                                <p className='text-2xl italic font-Poppins '>In Association with <span className='font-bold not-italic hover:underline-offset-2 underline cursor-pointer' onClick={
+                                    () => {
+                                        window.open(source.inassociation_link, '_blank')
+                                    }
+
+                                }>{source.inassociation_with}</span></p>
+                            )
+                        }
                     </div>
 
                 </div>
 
-                <div className='basis-2/5'>
+                <div className='lg:basis-2/5'>
                     <img src={source.featuredimage} alt="featured_image" className='rounded-md drop-shadow-2xl' />
 
                 </div>
@@ -109,15 +124,15 @@ function EachProject({ source }) {
             {
                 source.category.map((item, index) => (
                     <div className='p-10 flex flex-col container mx-auto justify-center items-center' key={index}>
-                        <h1 className='font-Bodoni text-6xl font-black leading-10'>{item.title}</h1>
+                        <h1 className='font-Bodoni lg:text-6xl text-4xl font-black leading-10'>{item.title}</h1>
                         <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
-                        <div>
-                            <p className='text-2xl font-Poppins text-center px-10 font-normal'>{item.description}</p>
+                        <div className='container mx-auto'>
+                            <p className='lg:text-2xl font-Poppins text-center lg:px-10 font-normal'>{item.description}</p>
                         </div>
                         <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
 
                         <PhotoProvider>
-                            <div className="lg:columns-2 gap-3 lg:w-[1000px] mx-auto space-y-3 pb-20">
+                            <div className="lg:columns-2 gap-5 lg:w-[1300px] mx-auto space-y-3 pb-20">
                                 {item.image.map((item, index) => (
                                     <PhotoView key={index} src={item}>
                                         <div className='break-inside-avoid'>
