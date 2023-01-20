@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const getStaticProps = async () => {
   const source = getPaths();
-  console.log(source);
+  // console.log(source);
   return {
     props: {
       source
@@ -32,7 +32,10 @@ const Gallery = ({ source }) => {
                 return (
                   <PhotoView key={index} src={item}>
                     <div className='break-inside-avoid'>
-                      <Image src={item} alt="featured_image" className='rounded-md drop-shadow-2xl cursor-grab !w-full !h-full' width={1000} height={1000} />
+                      <Image src={item}
+                        alt="featured_image"
+                        className='rounded-md drop-shadow-2xl cursor-grab !w-full !h-full'
+                        width={500} height={500} />
                     </div>
                   </PhotoView>
                 );
