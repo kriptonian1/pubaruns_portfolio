@@ -7,7 +7,9 @@ import Image from "next/image";
 
 
 export const getStaticProps = async () => {
-  const source = getPaths();
+  let source = getPaths();
+  // get only first 10 element 
+  source = source.slice(0, 30);
   // console.log(source);
   return {
     props: {
