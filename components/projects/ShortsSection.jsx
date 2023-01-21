@@ -7,12 +7,12 @@ const ShortsSection = () => {
     const data = [
         {
             title: 'Tales of the Seven Huts',
-            date: '23 Oct, 2021',
+            date: 'Nov, 2021',
             image: shortsThumb,
         },
         {
             title: 'Reminiscence',
-            date: '23 Oct, 2021',
+            date: 'Dec, 2020',
             image: shortsThumb2,
         },
         {

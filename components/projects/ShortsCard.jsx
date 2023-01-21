@@ -10,7 +10,7 @@ const ShortsCard = ({ title, image, date}) => {
                 <Image className='sm:min-w-[30%] ' src={image} alt='shorts' />
                 <div className='flex relative flex-col mx-6 my-3'>
                     <div className='flex space-x-[8vw] sm:space-x-[4vw] items-baseline'>
-                        <div className='text-xl sm:text-xl w-[60px] font-semibold'>
+                        <div className='text-lg m-2 sm:text-xl w-[60px] font-semibold'>
                             {title}
                         </div>
                         <div className='text-base'>
