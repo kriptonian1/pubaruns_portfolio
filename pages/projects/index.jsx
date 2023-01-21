@@ -45,6 +45,7 @@ const projects = () => {
                                     date={item.date}
                                     description={item.description}
                                     image={item.image}
+                                    location={item.location}
                                     slug={item.slug}
                                 />
                             )

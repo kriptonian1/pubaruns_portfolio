@@ -1,7 +1,8 @@
 [{
         "title": "Wangala : The Drummer's Offering to Saljong",
         "date": "November 2022",
-        "description": "The photo series portrays the journey to freedom for the Ramnamis, a lower caste tribe in India, and the permanent tattoos ....",
+        "description": "Documenting the Garo tribe's Vibrant Tribute to their Sun Deity",
+        "location": "Garo Hills, Meghalaya, India",
         "image": "/projects/assets/projectThumb.png",
         "slug": "Wangala"
     },
@@ -9,19 +10,22 @@
         "title": "In the Name of God",
         "date": "July 2022",
         "description": "Rediscovering the Road to Freedom of the Ramnamis",
+        "location": "Janjgir-Champa, Chhattisgarh, India",
         "image": "/projects/assets/projectThumb1.png",
         "slug": "In the Name of God"
     },
     {
         "title": "The Great Pilgrimage",
         "date": "July 2022",
-        "description": "In the state of Maharashtra in India, an 800 years old tradition still finds its way in the modern world. In the month of Asadh, the agrarian  ....",
+        "description": "The Warkaris' Quest to Spiritual Enlightenment ",
+        "location": "Solapur, Maharashtra, India",
         "image": "/projects/assets/projectThumb2.png",
         "slug": "The Great Pilgrimage"
     }, {
         "title": "Shekhawati - The Cradle of Life",
         "date": "August 2022",
-        "description": "The history of Shekhawati is composed of ancient myths and fables that shape the modern-day narrative of its culture. What once used to be....",
+        "description": "Diving into the rich cultural history of a place lost in time",
+        "location": "Shekhawati, Rajasthan, India",
         "image": "/projects/assets/projectThumb3.png",
         "slug": "Shekhawati - The Cradle of Life"
     }

@@ -134,9 +134,9 @@ const Gallery = () => {
     }
     const categoryOnSelect = (select) => {
         if (select) {
-            return "";
+            return "underline";
         }
-        return "border-l-0";
+        return "no-underline";
     }
 
     useEffect(() => {
@@ -153,18 +153,19 @@ const Gallery = () => {
     }, [year, category,]);
 
     return (
-        <div>
+        <div className="">
             <Navbar />
 
-            <div className="mx-[7.5vw] grid grid-cols-5 gap-5 ">
+            <div className="mx-[7.5vw] grid grid-cols-5 gap-5">
                 <div className="col-span-4 flex flex-col ">
-                    <div className="flex flex-row justify-start items-center gap-10 pt-10 overflow-y-hidden">
+                    {/* category */}
+                    <div className="flex flex-row justify-start items-center gap-10 pt-6 overflow-y-hidden">
                         {
                             Category.map(
                                 (item, index) => {
                                     return (
                                         <div key={index} className="flex flex-row justify-center items-center cursor-pointer">
-                                            <div className={`${categoryOnSelect(category === item)} text-black capitalize font-Montserrat text-2xl leading-[29.26px] font-semibold`}
+                                            <div className={`${categoryOnSelect(category === item)} text-black capitalize font-Montserrat text-xl leading-[29.26px] font-medium`}
                                                 onClick={(e) => {
                                                     setcategory(
                                                         item
@@ -178,6 +179,7 @@ const Gallery = () => {
                         }
 
                     </div>
+                    
                     <div className="flex flex-row justify-center pt-10">
                         <div className="basis-1/4">
                             <div className="flex flex-col justify-start items-start gap-8 py-10 pl-10">
@@ -199,6 +201,7 @@ const Gallery = () => {
                                 }
                             </div>
                         </div>
+                        {/* main picture */}
                         <div className="basis-3/4 h-[500px]">
                             <div className="flex flex-col justify-center items-center">
                                 {mainsatge &&
@@ -211,7 +214,7 @@ const Gallery = () => {
                                                 <div className='break-inside-avoid'>
                                                     <Image src={mainsatge?.path}
                                                         alt="featured_image"
-                                                        className='rounded-md drop-shadow-2xl cursor-grab !w-full !h-[400px]'
+                                                        className='rounded-md drop-shadow-2xl cursor-grab !w-full !h-[50vh]'
                                                         width={500} height={500} />
                                                     <div className="flex justify-start items-start text-start w-full">
                                                         <p className="font-Poppins font-semibold text-base italic text-start">{mainsatge?.name}</p>
@@ -225,7 +228,9 @@ const Gallery = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-1  !overflow-y-scroll lg:h-[650px] ">
+
+                {/* gallery side bar */}
+                <div className="col-span-1  !overflow-y-scroll lg:h-[87vh] ">
                     <div className="flex flex-col justify-center items-center gap-5 px-5 snap-y ">
                         {sidestage &&
                             sidestage?.map((item, index) => {
@@ -239,7 +244,7 @@ const Gallery = () => {
                                     >
                                         <Image src={item.path}
                                             alt="featured_image"
-                                            className='rounded-md drop-shadow-2xl cursor-grab !w-full !h-full hover:grayscale-0 grayscale'
+                                            className='rounded-md drop-shadow-2xl cursor-pointer !w-full !h-full hover:grayscale-0 transition-all grayscale'
                                             width={500} height={500} />
                                     </div>
                                 );
