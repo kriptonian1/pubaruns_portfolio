@@ -125,12 +125,17 @@ function EachProject({ source }) {
                 source.category.map((item, index) => (
                     <div className='p-10 flex flex-col container mx-auto justify-center items-center' key={index}>
                         <h1 className='font-Bodoni lg:text-6xl text-4xl font-black leading-10'>{item.title}</h1>
-                        <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
-                        <div className='container mx-auto'>
-                            <p className='lg:text-2xl font-Poppins text-center lg:px-10 font-normal'>{item.description}</p>
-                        </div>
-                        <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
-
+                        {
+                            item.description && (
+                                <>
+                                    <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
+                                    <div className='container mx-auto'>
+                                        <p className='lg:text-2xl font-Poppins text-center lg:px-10 font-normal' dangerouslySetInnerHTML={{ __html: item.description }} />
+                                    </div>
+                                    <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
+                                </>
+                            )
+                        }
                         <PhotoProvider
                             speed={() => 800}
                             easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
