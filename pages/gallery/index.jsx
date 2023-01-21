@@ -33,7 +33,7 @@ const Gallery = () => {
         "Daily Life",
         "Environment",
         "Monochrome",
-        "Portarits"
+        "Portraits"
     ]
 
     const GalleryData = [
@@ -195,34 +195,36 @@ const Gallery = () => {
                         </div>
                         <div className="basis-3/4 h-[500px]">
                             <div className="flex flex-col justify-center items-center">
-                                <PhotoProvider
-                                    speed={() => 800}
-                                    easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
-                                >
-                                    {
-                                        <PhotoView src={mainsatge?.path}>
-                                            <div className='break-inside-avoid'>
-                                                <Image src={mainsatge?.path}
-                                                    alt="featured_image"
-                                                    className='rounded-md drop-shadow-2xl cursor-grab !w-full !h-[400px]'
-                                                    width={500} height={500} />
-                                                <div className="flex justify-start items-start text-start w-full">
-                                                    <p className="font-Poppins font-semibold text-base italic text-start">{mainsatge?.name}</p>
+                                {mainsatge &&
+                                    <PhotoProvider
+                                        speed={() => 800}
+                                        easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
+                                    >
+                                        {
+                                            <PhotoView src={mainsatge?.path}>
+                                                <div className='break-inside-avoid'>
+                                                    <Image src={mainsatge?.path}
+                                                        alt="featured_image"
+                                                        className='rounded-md drop-shadow-2xl cursor-grab !w-full !h-[400px]'
+                                                        width={500} height={500} />
+                                                    <div className="flex justify-start items-start text-start w-full">
+                                                        <p className="font-Poppins font-semibold text-base italic text-start">{mainsatge?.name}</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </PhotoView>
-                                    }
-                                </PhotoProvider>
+                                            </PhotoView>
+                                        }
+                                    </PhotoProvider>
+                                }
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="col-span-1  !overflow-y-scroll h-[650px]">
+                <div className="col-span-1  !overflow-y-scroll lg:h-[650px] ">
                     <div className="flex flex-col justify-center items-center gap-5 px-5 snap-y ">
-                        {
+                        {sidestage &&
                             sidestage?.map((item, index) => {
                                 return (
-                                    <div key={index} className='break-inside-avoid'
+                                    <div key={index} className='break-inside-avoid snap-center'
                                         onClick={
                                             (e) => {
                                                 setMainstage(item)

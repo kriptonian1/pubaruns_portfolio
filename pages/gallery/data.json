@@ -1,11 +1,298 @@
 [{
-    "name": "A Smiling Escape",
-    "year": 2023,
-    "path": "/gallery/Conceptual/_PB08180.jpg",
-    "category": "Conceptual"
-}, {
-    "name": "No Escape from Reality",
-    "year": 2023,
-    "path": "/gallery/Conceptual/No Escape from Reality_.jpg",
-    "category": "Conceptual"
-}]
+        "name": "A Smiling Escape",
+        "year": 2023,
+        "path": "/gallery/Conceptual/_PB08180.jpg",
+        "category": "Conceptual"
+    }, {
+        "name": "No Escape from Reality",
+        "year": 2023,
+        "path": "/gallery/Conceptual/_PB08811.jpg",
+        "category": "Conceptual"
+    }, {
+        "name": "Desolation_",
+        "year": 2023,
+        "path": "/gallery/Conceptual/Desolation_.jpg",
+        "category": "Conceptual"
+    }, {
+        "name": "In Metamorphosis",
+        "year": 2023,
+        "path": "/gallery/Conceptual/In Metamorphosis_.jpg",
+        "category": "Conceptual"
+    }, {
+        "name": "No Escape from Reality",
+        "year": 2023,
+        "path": "/gallery/Conceptual/No Escape from Reality_.jpg",
+        "category": "Conceptual"
+    }, {
+        "name": "Rêverie",
+        "year": 2023,
+        "path": "/gallery/Conceptual/Rêverie.jpg",
+        "category": "Conceptual"
+    }, {
+        "name": "The Interface of Two Realms",
+        "year": 2023,
+        "path": "/gallery/Conceptual/The Interface of Two Realms.jpg",
+        "category": "Conceptual"
+    }, {
+        "name": "The Pigeon-hole Principle",
+        "year": 2023,
+        "path": "/gallery/Conceptual/The Pigeon-hole Principle.jpg",
+        "category": "Conceptual"
+    }, {
+        "name": "Trapped in the Grand Design",
+        "year": 2023,
+        "path": "/gallery/Conceptual/Trapped in the Grand Design.jpg",
+        "category": "Conceptual"
+    }, {
+        "name": "Dance of Eternity",
+        "year": 2023,
+        "path": "/gallery/Culture/Dance of Eternity_.jpg",
+        "category": "Culture"
+    }, {
+        "name": "Dance of Eternity",
+        "year": 2023,
+        "path": "/gallery/Culture/Grandeur_.jpg",
+        "category": "Culture"
+    }, {
+        "name": "Dance of Eternity",
+        "year": 2023,
+        "path": "/gallery/Culture/March of the Devotees.jpg",
+        "category": "Culture"
+    }, {
+        "name": "Dance of Eternity",
+        "year": 2023,
+        "path": "/gallery/Culture/PB0_1201.jpg",
+        "category": "Culture"
+    }, {
+        "name": "PBS02533",
+        "year": 2023,
+        "path": "/gallery/Culture/PBS02533.jpg",
+        "category": "Culture"
+    }, {
+        "name": "PBS08013",
+        "year": 2023,
+        "path": "/gallery/Culture/PBS08013.jpg",
+        "category": "Culture"
+    }, {
+        "name": "Rhythm of the Hundred Drums",
+        "year": 2023,
+        "path": "/gallery/Culture/Rhythm of the Hundred Drums.jpg",
+        "category": "Culture"
+    }, {
+        "name": "The Eternal Smoke",
+        "year": 2023,
+        "path": "/gallery/Culture/The Eternal Smoke.jpg",
+        "category": "Culture"
+    }, {
+        "name": "The Tree of Traditions",
+        "year": 2023,
+        "path": "/gallery/Culture/The Tree of Traditions.jpg",
+        "category": "Culture"
+    }, {
+        "name": "Waves",
+        "year": 2023,
+        "path": "/gallery/Culture/Waves.jpg",
+        "category": "Culture"
+    }, {
+        "name": "Nostalgia_",
+        "year": 2023,
+        "path": "/gallery/Daily Life/Nostalgia_.jpg",
+        "category": "Daily Life"
+    }, {
+        "name": "PBS02555",
+        "year": 2023,
+        "path": "/gallery/Daily Life/PBS02555.jpg",
+        "category": "Daily Life"
+    }, {
+        "name": "Perspectives of Emotions",
+        "year": 2023,
+        "path": "/gallery/Daily Life/Perspectives of Emotions_.jpg",
+        "category": "Daily Life"
+    }, {
+        "name": "River of Sorrows",
+        "year": 2023,
+        "path": "/gallery/Daily Life/River of Sorrows.jpg",
+        "category": "Daily Life"
+    }, {
+        "name": "Solace",
+        "year": 2023,
+        "path": "/gallery/Daily Life/Solace.jpg",
+        "category": "Daily Life"
+    }, {
+        "name": "Tale as Old as Time",
+        "year": 2023,
+        "path": "/gallery/Daily Life/Tale as Old as Time.jpg",
+        "category": "Daily Life"
+    }, {
+        "name": "The Flow of Civilization",
+        "year": 2023,
+        "path": "/gallery/Daily Life/The Flow of Civilization_.jpg",
+        "category": "Daily Life"
+    }, {
+        "name": "The Solitary Reaper",
+        "year": 2023,
+        "path": "/gallery/Daily Life/The Solitary Reaper.jpg",
+        "category": "Daily Life"
+    }, {
+        "name": "The Solitary Reaper",
+        "year": 2023,
+        "path": "/gallery/Daily Life/The Solitary Reaper.jpg",
+        "category": "Daily Life"
+    }, {
+        "name": "The Tree of Life",
+        "year": 2023,
+        "path": "/gallery/Daily Life/The Tree of Life.jpg",
+        "category": "Daily Life"
+    }, {
+        "name": "_PB08737",
+        "year": 2023,
+        "path": "/gallery/Environment/_PB08737.jpg",
+        "category": "Environment"
+    }, {
+        "name": "_PB09550",
+        "year": 2023,
+        "path": "/gallery/Environment/_PB09550.jpg",
+        "category": "Environment"
+    }, {
+        "name": "_PB09722",
+        "year": 2023,
+        "path": "/gallery/Environment/_PB09722.jpg",
+        "category": "Environment"
+    }, {
+        "name": "Boating through the Crystalline River",
+        "year": 2023,
+        "path": "/gallery/Environment/Boating through the Crystalline River_.jpg",
+        "category": "Environment"
+    }, {
+        "name": "Colour Coordinated.",
+        "year": 2023,
+        "path": "/gallery/Environment/Colour Coordinated.jpg",
+        "category": "Environment"
+    }, {
+        "name": "Game of Colours_",
+        "year": 2023,
+        "path": "/gallery/Environment/Game of Colours_.jpg",
+        "category": "Environment"
+    }, {
+        "name": "Game of Colours_(1)",
+        "year": 2023,
+        "path": "/gallery/Environment/Game of Colours_(1).jpg",
+        "category": "Environment"
+    }, {
+        "name": "In the Face of Death",
+        "year": 2023,
+        "path": "/gallery/Environment/In the Face of Death.jpg",
+        "category": "Environment"
+    }, {
+        "name": "PB0_1608",
+        "year": 2023,
+        "path": "/gallery/Environment/PB0_1608.jpg",
+        "category": "Environment"
+    }, {
+        "name": "Transience_",
+        "year": 2023,
+        "path": "/gallery/Environment/Transience_.jpg",
+        "category": "Environment"
+    }, {
+        "name": "_PB05465bw",
+        "year": 2023,
+        "path": "/gallery/Monochrome/_PB05465bw.jpg",
+        "category": "Monochrome"
+    }, {
+        "name": "_PB08452",
+        "year": 2023,
+        "path": "/gallery/Monochrome/_PB08452.jpg",
+        "category": "Monochrome"
+    }, {
+        "name": "Bonded with Chain and Love",
+        "year": 2023,
+        "path": "/gallery/Monochrome/Bonded with Chain and Love.jpg",
+        "category": "Monochrome"
+    }, {
+        "name": "Call of the River",
+        "year": 2023,
+        "path": "/gallery/Monochrome/Call of the River.jpg",
+        "category": "Monochrome"
+    }, {
+        "name": "Loopholes in Time",
+        "year": 2023,
+        "path": "/gallery/Monochrome/Loopholes in Time.jpg",
+        "category": "Monochrome"
+    }, {
+        "name": "Reincarnation_",
+        "year": 2023,
+        "path": "/gallery/Monochrome/Reincarnation_.jpg",
+        "category": "Monochrome"
+    }, {
+        "name": "The Shape of Water",
+        "year": 2023,
+        "path": "/gallery/Monochrome/The Shape of Water.jpg",
+        "category": "Monochrome"
+    }, {
+        "name": "Metropolis of Lost Dreamers",
+        "year": 2023,
+        "path": "/gallery/Monochrome/Metropolis of Lost Dreamers.jpg",
+        "category": "Monochrome"
+    }, {
+        "name": "Two Chefs and a Cauldron",
+        "year": 2023,
+        "path": "/gallery/Monochrome/Two Chefs and a Cauldron.jpg",
+        "category": "Monochrome"
+    }, {
+        "name": "Wah Taj",
+        "year": 2023,
+        "path": "/gallery/Monochrome/Wah Taj.jpg",
+        "category": "Monochrome"
+    }, {
+        "name": "_PB01004",
+        "year": 2023,
+        "path": "/gallery/Portraits/_PB01004.jpg",
+        "category": "Portraits"
+    }, {
+        "name": "_PB08162",
+        "year": 2023,
+        "path": "/gallery/Portraits/_PB08162.jpg",
+        "category": "Portraits"
+    }, {
+        "name": "_PB08353",
+        "year": 2023,
+        "path": "/gallery/Portraits/_PB08353.jpg",
+        "category": "Portraits"
+    }, {
+        "name": "_PB09869",
+        "year": 2023,
+        "path": "/gallery/Portraits/_PB09869.jpg",
+        "category": "Portraits"
+    }, {
+        "name": "Between the Bars",
+        "year": 2023,
+        "path": "/gallery/Portraits/Between the Bars.jpg",
+        "category": "Portraits"
+    }, {
+        "name": "Copy of _PB00070",
+        "year": 2023,
+        "path": "/gallery/Portraits/Copy of _PB00070.jpg",
+        "category": "Portraits"
+    }, {
+        "name": "Euphoria",
+        "year": 2023,
+        "path": "/gallery/Portraits/Euphoria.jpg",
+        "category": "Portraits"
+    }, {
+        "name": "In the Name of God",
+        "year": 2023,
+        "path": "/gallery/Portraits/In the Name of God.jpg",
+        "category": "Portraits"
+    }, {
+        "name": "PBS07615",
+        "year": 2023,
+        "path": "/gallery/Portraits/PBS07615.jpg",
+        "category": "Portraits"
+    }, {
+        "name": "The Eyes of a Mother",
+        "year": 2023,
+        "path": "/gallery/Portraits/The Eyes of a Mother.jpg",
+        "category": "Portraits"
+    }
+
+]
