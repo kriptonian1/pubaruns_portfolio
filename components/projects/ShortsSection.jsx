@@ -16,15 +16,13 @@ const ShortsSection = () => {
             image: shortsThumb2,
         },
         {
-            title: 'Flower Market',
+            title: 'A Riot of Colours',
             date: '23 Oct, 2021',
-            tags: ['Life', 'Demo', 'Tag'],
             image: shortsThumb3,
         },
         {
-            title: 'Dalma',
+            title: 'Inside the Secret Sanctuary',
             date: '23 Oct, 2021',
-            tags: ['Life', 'Demo', 'Tag'],
             image: shortsThumb1,
         }
     ]
