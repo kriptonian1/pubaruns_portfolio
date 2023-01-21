@@ -126,9 +126,15 @@ const Gallery = () => {
 
     }
 
-    const lineOnSelect = (select) => {
+    const yearOnSelect = (select) => {
         if (select) {
-            return "border-l-4 pl-2";
+            return "border-l-4 pl-2  border-black";
+        }
+        return "border-l-0";
+    }
+    const categoryOnSelect = (select) => {
+        if (select) {
+            return "";
         }
         return "border-l-0";
     }
@@ -158,7 +164,7 @@ const Gallery = () => {
                                 (item, index) => {
                                     return (
                                         <div key={index} className="flex flex-row justify-center items-center cursor-pointer">
-                                            <div className="text-black capitalize font-Montserrat text-2xl leading-[29.26px] font-semibold"
+                                            <div className={`${categoryOnSelect(category === item)} text-black capitalize font-Montserrat text-2xl leading-[29.26px] font-semibold`}
                                                 onClick={(e) => {
                                                     setcategory(
                                                         item
@@ -179,7 +185,7 @@ const Gallery = () => {
                                     Year.reverse().map((item, index) => {
                                         return (
                                             <div key={index} className={`${scaleonSelect(year === item)}flex flex-row justify-start items-start cursor-pointer`}>
-                                                <div className={`${lineOnSelect(year === item)} text-black capitalize font-Poppins text-3xl leading-[29.26px] font-normal   border-black`}
+                                                <div className={`${yearOnSelect(year === item)} text-black capitalize font-Poppins text-3xl leading-[29.26px] font-normal `}
                                                     onClick={(e) => {
                                                         setyear(
                                                             item
