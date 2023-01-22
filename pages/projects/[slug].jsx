@@ -50,12 +50,12 @@ function EachProject({ source }) {
                 />
 
                 <div className='absolute inset-0 text-center flex flex-col justify-center items-center gap-0'>
-                    <h1 className='lg:text-8xl text-3xl lg:leading-[117px] font-black text-white font-Bodoni'>{source.title}</h1>
-                    <p className='lg:text-xl text-xs italic text-white font-Poppins lg:m-[17px] font-light'>A photo Series by <span className='not-italic lg:text-4xl text-2xl pl-2 text-white'>Pubarun Basu</span></p>
+                    <h1 className='lg:text-8xl text-xl lg:leading-[117px] font-black text-white font-Bodoni'>{source.title}</h1>
+                    <p className='lg:text-xl text-xs italic text-white font-Poppins lg:m-[17px] font-light'>A photo Series by <span className='not-italic lg:text-4xl text-xl pl-2 text-white'>Pubarun Basu</span></p>
                     <p className=' text-white font-Poppins text-sm lg:text-lg'>{source.date}</p>
                 </div>
                 <div className='absolute bottom-1 lg:p-10  w-full p-2'>
-                    <div className='flex flex-row justify-between gap-10'>
+                    <div className='flex flex-row justify-between '>
                         <div>
                             <p className='text-white text-xs lg:text-lg font-Poppins'>Image goes here :)</p>
                         </div>
@@ -73,26 +73,30 @@ function EachProject({ source }) {
             <div className='lg:p-10 pt-10 flex lg:flex-row flex-col container mx-auto pl-5 justify-between items-start'>
                 <div className='lg:basis-3/5   text-black lg:p-10 lg:pt-16 pb-2'>
                     <div className='border-l-4 border-black lg:px-10' >
-                        <p className=' font-Montserrat font-semibold lg:text-6xl  text-3xl pl-5'>{source.quote}</p>
-                        <p className=' font-Poppins font-normal lg:mt-5  text-xl'>{source.subquote}</p>
+                        <p className=' font-Montserrat font-semibold lg:text-6xl pb-2  text-xl pl-5'>{source.quote}</p>
+                        <p className=' font-Poppins font-normal lg:mt-5 pl-5 lg:text-xl'>{source.subquote}</p>
                     </div>
-                    <div className='pt-24'>
-                        <h1 className='lg:text-3xl text-2xl font-Poppins font-semibold pb-5'>THEMES</h1>
+                    <div className='lg:pt-24 pt-10'>
+                        <h1 className='lg:text-3xl text-xl font-Poppins font-semibold pb-5'>THEMES</h1>
                         <div className='ml-5'>
                             {
                                 source.theme.map((item, index) => (
-                                    <li className='font-Poppins font-normal lg:text-2xl text-xl' key={index} dangerouslySetInnerHTML={{ __html: item }} />
+                                    <li className='font-Poppins font-normal lg:text-2xl text-base' key={index} dangerouslySetInnerHTML={{ __html: item }} />
                                 ))
 
                             }
                         </div>
-                        <div className='border border-[#000000] h-1 bg-black mt-12 w-[10vw] ml-[1rem] mb-16' />
+                        <div className='border border-[#000000] h-1 bg-black lg:mt-12 w-[10vw] ml-[1rem] mb-16' />
                         {
                             source.commissioned_by && (
 
-                                <p className='text-2xl italic font-Poppins '>Commissioned by  <span className='font-bold not-italic hover:underline-offset-2 underline cursor-pointer' onClick={
+                                <p className='lg:text-2xl italic font-Poppins my-5'>Commissioned by  <span className='font-bold not-italic hover:underline-offset-2 underline cursor-pointer' onClick={
                                     () => {
-                                        window.open(source.commissioned_link, '_blank')
+                                        if (commissioned_link) {
+                                            window.open(source.commissioned_link, '_blank')
+                                        } else {
+                                            // do nothing
+                                        }
                                     }
 
                                 }>{source.commissioned_by}</span></p>
@@ -197,7 +201,7 @@ function EachProject({ source }) {
                     <>
                         <div className='flex flex-col justify-center items-center'>
                             <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
-                            <p className='font-Bodoni text-2xl pb-10 font-semibold'>{source.buyat.name}</p>
+                            <p className='font-Bodoni text-2xl pb-10 font-medium px-5 drop-shadow-2xl text-center'>{source.buyat.name}</p>
                             <div className='container mx-auto'>
                                 <div className='flex flex-row justify-center items-center'>
                                     <div>
