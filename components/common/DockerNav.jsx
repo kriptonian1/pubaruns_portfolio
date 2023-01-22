@@ -23,7 +23,7 @@ const DockerNav = ({ isVisible }) => {
 
     return (
         <div className='flex justify-center '>
-            <nav style={{ visibility: isVisible ? 'visible' : 'hidden' }} className={`fixed z-[999] items-center bottom-9 transition-all duration-200 ${isVisible ? 'opacity-100 visible' : 'hidden opacity-0'}  shadow-2xl flex gap-7 text-[#DCDCDC] bg-[#3e3e3ecc] border-[10px] backdrop-blur-sm md:px-[15px] px-2 md:py-[5px] border-[#0000001a] md:w-[40rem] w-[20rem] md:rounded-[20px] rounded-[20px]`}>
+            <nav style={{ visibility: isVisible ? 'visible' : 'hidden' }} className={`fixed z-[999] flex justify-center items-center bottom-9 transition-all duration-200 ${isVisible ? 'opacity-100 visible' : 'hidden opacity-0'}  shadow-2xl flex gap-7 text-[#DCDCDC] bg-[#3e3e3ecc] border-[10px] backdrop-blur-sm md:px-[15px] px-2 md:py-[5px] border-[#0000001a] md:w-[40rem] w-[20rem] md:rounded-[20px] rounded-[20px]`}>
                 <Link href='/'>
                     <div className={`${highlightOnRoute(currrentRoute === "/")} py-[10px] transition-all rounded-md duration-500  font-semibold  px-[10px]`}>
                         Home
@@ -49,7 +49,7 @@ const DockerNav = ({ isVisible }) => {
                 </Link>
 
                 <Link href='/about'>
-                    <div className={`${highlightOnRoute(currrentRoute === '/store')} py-[10px] transition-all duration-500 rounded-md text-[] font-semibold bg-[] px-[10px]`}>
+                    <div className={`${highlightOnRoute(currrentRoute === '/about')} py-[10px] transition-all duration-500 rounded-md text-[] font-semibold bg-[] px-[10px]`}>
                         About Me
                     </div>
                 </Link>
