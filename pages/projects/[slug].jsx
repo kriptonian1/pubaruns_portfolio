@@ -137,7 +137,7 @@ function EachProject({ source }) {
                             speed={() => 800}
                             easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
                         >
-                            <div className="lg:columns-2 gap-5 lg:w-[1300px] mx-auto space-y-3 pb-20">
+                            <div className={` ${item.image.length === 1 ? "lg:columns-1" : "lg:columns-2"} gap-5 lg:w-[1300px] mx-auto space-y-3 pb-20 `}>
                                 {item.image.map((item, index) => (
                                     <PhotoView key={index} src={item}>
                                         <div className='break-inside-avoid'>
@@ -184,15 +184,49 @@ function EachProject({ source }) {
                     </div>
                 </PhotoProvider>
             </div> */}
-            <PhotoProvider>
-                <div className="columns-1 gap-3 lg:w-[1000px] mx-auto space-y-3 pb-20">
-                    <PhotoView src={source.footerimage}>
-                        <div className='break-inside-avoid'>
-                            <img src={source.footerimage} alt="Footer Image" className='rounded-md drop-shadow-2xl' />
+
+            {
+                source.buyat && (
+                    <>
+                        <div className='flex flex-col justify-center items-center'>
+                            <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
+                            <p className='font-Bodoni text-2xl pb-10 font-semibold'>{source.buyat.name}</p>
+                            <div className='container mx-auto'>
+                                <div className='flex flex-row justify-center items-center'>
+                                    <div>
+                                        <Image src={source.buyat.coverbookimage} width={500} height={500} alt={source.buyat.name}
+                                            className='w-full h-full rounded-md' />
+                                    </div>
+
+                                </div>
+                                <p className='lg:text-2xl font-Poppins text-center lg:px-10 font-normal pt-2'>Buy at <span className='font-bold not-italic hover:underline-offset-2 underline cursor-pointer' onClick={
+                                    () => {
+                                        window.open(source.buyat.url, '_blank')
+                                    }
+                                }
+                                >Amazon</span></p>
+                            </div>
+                            <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
                         </div>
-                    </PhotoView>
-                </div>
-            </PhotoProvider>
+                    </>
+                )
+            }
+
+            {
+                source.footerimage && (
+                    <PhotoProvider>
+                        <div className="columns-1 gap-3 lg:w-[1000px] mx-auto space-y-3 pb-20">
+                            <PhotoView src={source.footerimage}>
+                                <div className='break-inside-avoid'>
+                                    <img src={source.footerimage} alt="Footer Image" className='rounded-md drop-shadow-2xl' />
+                                </div>
+                            </PhotoView>
+                        </div>
+                    </PhotoProvider>
+                )
+
+            }
+
         </div>
     )
 }
