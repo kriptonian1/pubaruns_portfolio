@@ -30,7 +30,7 @@ const projects = () => {
                     <div className='w-[35vh] md:w-[80vh] border-[5px] border-[#181716] translate-y-[4vh] md:translate-y-[2.5vw]'></div>
                 </div>
 
-                <div className='flex flex-col md:flex-row mt-[76px] mb-[76px] md:space-x-[10vh]'>
+                <div className='flex flex-col  md:flex-row mt-[76px] mb-[76px] md:space-x-[10vh]'>
                     <HeadCard />
                     <ShortsSection />
                 </div>

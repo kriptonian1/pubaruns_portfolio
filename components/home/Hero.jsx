@@ -70,7 +70,10 @@ const Hero = () => {
           <Image
             src={heroCamera}
             alt="hero"
+            priority
             className="md:w-[20rem] lg:w-[30vw] translate-y-[5rem]"
+            draggable={false}
+            quality={50}
           />
         </div>
 

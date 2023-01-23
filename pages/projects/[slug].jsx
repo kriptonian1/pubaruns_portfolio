@@ -6,7 +6,6 @@ import { Navbar } from '../../components/common'
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
-
 export const getStaticProps = async ({ params }) => {
     const { slug } = params;
     const { source } = getProjectFromSlug(slug);
@@ -57,7 +56,8 @@ function EachProject({ source }) {
                 <div className='absolute bottom-1 lg:p-10  w-full p-2'>
                     <div className='flex flex-row justify-between '>
                         <div>
-                            <p className='text-white text-xs lg:text-lg font-Poppins'>Image goes here :)</p>
+                            {/* ! to be fixed */}
+                            <p className='text-white font-Poppins'>Image goes here :)</p>
                         </div>
                         <div className='flex flex-row justify-end items-center'>
                             <svg width="18" height="14" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">

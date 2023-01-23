@@ -5,7 +5,7 @@ import { projectThumb } from './assets'
 
 const ProjectCard = ({ title, description, date, image, location, slug }) => {
     return (
-        <div className="bg-white md:w-[25vw] h-auto  rounded-2xl shadow-none transition duration-500 hover:shadow-xl">
+        <div className="bg-white  h-auto  rounded-2xl shadow-none drop-shadow-lg transition duration-500 hover:shadow-xl">
             <Link href={`/projects/${slug}`}>
                 <Image className="rounded-t-2xl" src={image} alt="" width={1920} height={1080} />
                 <div className="m-5">
