@@ -28,7 +28,7 @@ const PhotoSection = () => {
             <div className='flex ml-12 pt-10 mb-9'>
                 <div className='flex'>
 
-                    <Image className='grayscale hover:grayscale-0 transition-all w-[40rem] ' width={2048} height={1268} src={photo1} alt="photo1" />
+                    <Image draggable={false} className='grayscale hover:grayscale-0 transition-all w-[40rem] ' width={2048} height={1268} src={photo1} alt="photo1" />
                     <div className={`  translate-y-[-4rem] z-[-1] translate-x-[-1.8rem] text-[84px] font-black text-[#333333]`}>
                         01.
                     </div>

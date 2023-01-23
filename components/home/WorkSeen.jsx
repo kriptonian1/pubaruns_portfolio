@@ -29,7 +29,7 @@ const WorkSeen = () => {
             <div className='grid gap-y-9 grid-cols-3 grid-rows-2 mx-[12vw] my-[7vh] items-center'>
                 {work.map((item, index) => {
                     return (
-                        <Image key={index} src={item} alt={`${item} Pubarun`} />
+                        <Image draggable={false} key={index} src={item} alt={`${item} Pubarun`} />
                     )
                 })}
 

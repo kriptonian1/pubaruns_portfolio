@@ -179,7 +179,7 @@ const Gallery = () => {
                         }
 
                     </div>
-                    
+
                     <div className="flex flex-row justify-center pt-10">
                         <div className="basis-1/4">
                             <div className="flex flex-col justify-start items-start gap-8 py-10 pl-10">
@@ -214,6 +214,7 @@ const Gallery = () => {
                                                 <div className='break-inside-avoid'>
                                                     <Image src={mainsatge?.path}
                                                         alt="featured_image"
+                                                        draggable={false}
                                                         className='rounded-md drop-shadow-2xl cursor-grab !w-full !h-[50vh]'
                                                         width={500} height={500} />
                                                     <div className="flex justify-start items-start text-start w-full">
@@ -243,6 +244,7 @@ const Gallery = () => {
                                         }
                                     >
                                         <Image src={item.path}
+                                            draggable={false}
                                             alt="featured_image"
                                             className='rounded-md drop-shadow-2xl cursor-pointer !w-full !h-full hover:grayscale-0 transition-all grayscale'
                                             width={500} height={500} />
