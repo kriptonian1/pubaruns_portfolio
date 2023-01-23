@@ -62,8 +62,7 @@ const Hero = () => {
             <div
               className={`${poppins.variable} font-Poppins w-[30vw] text-xl font-medium text-black pt-7`}
             >
-              I am a professional photographer dedicated to capturing the beauty
-              and emotion of each moment.
+              I am a young photographer documenting the coexistence of people, culture, and environment.
             </div>
           </div>
 
