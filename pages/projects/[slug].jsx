@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { getProjectFromSlug, getSlugs } from "../../lib/project";
@@ -28,7 +28,7 @@ export const getStaticPaths = async () => {
 
 
 function EachProject({ source }) {
-    // console.log(source);
+    console.log(source);
     return (
         <div>
             <Head>
@@ -39,12 +39,17 @@ function EachProject({ source }) {
 
             <div className='conatiner mx-auto bg-black mt-10 lg:mx-16 rounded-md relative'>
 
-                <Image
+                {console.log(source.image)}
 
+                <Image
+                    priority={true}
+                    placeholder='blur'
+                    blurDataURL={source.image}
                     src={source.image}
                     alt="Picture of the author"
                     width={1920}
                     height={1080}
+                    quality={50}
                     className='object-cover w-full lg:h-[30rem] opacity-50 rounded-md bg-center '
                 />
 
@@ -118,7 +123,7 @@ function EachProject({ source }) {
                 </div>
 
                 <div className='lg:basis-2/5 flex justify-center items-center'>
-                    <img src={source.featuredimage} alt="featured_image" className='rounded-md drop-shadow-2xl' />
+                    <Image src={source.featuredimage} loading={'lazy'} alt="featured_image" width={500} height={500} className='rounded-md drop-shadow-2xl' />
 
                 </div>
 
@@ -149,7 +154,10 @@ function EachProject({ source }) {
                                         {item.image.map((item, index) => (
                                             <PhotoView key={index} src={item}>
                                                 <div className='break-inside-avoid'>
-                                                    <img src={item} alt="featured_image" className='rounded-md drop-shadow-2xl cursor-grab' />
+                                                    <Image 
+                                                    width={1500} height={500}
+
+                                                    src={item} loading={'lazy'} alt="featured_image" className='rounded-md drop-shadow-2xl cursor-grab' />
                                                 </div>
                                             </PhotoView>
                                         ))}
@@ -162,40 +170,6 @@ function EachProject({ source }) {
                     </div>
                 ))
             }
-            {/* <div className='p-10 flex flex-col container mx-auto justify-center items-center'>
-                <h1>{source.category[0].title}</h1>
-                <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
-                <div>
-                    <p className='text-2xl font-Poppins text-center px-10 font-normal'>{source.category[0].description}</p>
-                </div>
-                <div className='border border-[#393939]  mt-12 w-[30vw] ml-[1rem] mb-16' />
-
-                <PhotoProvider>
-                    <div className="columns-2 gap-3 w-[1000px] mx-auto space-y-3 pb-28">
-                        {source.category[0].image.map((item, index) => (
-                            <PhotoView key={index} src={item}>
-                                <div className='break-inside-avoid'>
-                                    <img src={item} />
-                                </div>
-                            </PhotoView>
-                        ))}
-                    </div>
-                </PhotoProvider>
-            </div> */}
-            {/* <div className='container mx-auto -green-900 pt-10 text-white'>
-                <PhotoProvider>
-                    <div className="columns-3 gap-3 w-[1000px] mx-auto space-y-3 pb-28">
-                        {source.images.map((item, index) => (
-                            <PhotoView key={index} src={item}>
-                                <div className='break-inside-avoid'>
-                                    <img src={item} alt="" width={1920} height={1808} />
-                                </div>
-                            </PhotoView>
-                        ))}
-                    </div>
-                </PhotoProvider>
-            </div> */}
-
             {
                 source.buyat && (
                     <>
@@ -230,7 +204,8 @@ function EachProject({ source }) {
                             <div className="columns-1 gap-3 lg:w-[1000px] mx-auto lg:space-y-3 space-y-2 mb-2">
                                 <PhotoView src={source.footerimage}>
                                     <div className='break-inside-avoid'>
-                                        <img src={source.footerimage} alt="Footer Image" className='rounded-md drop-shadow-2xl' />
+                                        {console.log(source.footerimage)}
+                                        <Image src={source.footerimage} loading={'lazy'} placeholder={""} width={1000} height={0} alt="Footer Image" draggable={false} className='rounded-md drop-shadow-2xl' />
                                     </div>
                                 </PhotoView>
                             </div>
