@@ -38,13 +38,18 @@ function EachProject({ source }) {
 
 
             <div className='conatiner mx-auto bg-black mt-10 lg:mx-16 rounded-md relative'>
+                
+                {console.log(source.image)}
 
                 <Image
-
+                    priority={true}
+                    placeholder='blur'
+                    blurDataURL={(source.image)}
                     src={source.image}
                     alt="Picture of the author"
                     width={1920}
                     height={1080}
+                    quality={50}
                     className='object-cover w-full lg:h-[30rem] opacity-50 rounded-md bg-center '
                 />
 
@@ -118,7 +123,7 @@ function EachProject({ source }) {
                 </div>
 
                 <div className='lg:basis-2/5 flex justify-center items-center'>
-                    <img src={source.featuredimage} alt="featured_image" className='rounded-md drop-shadow-2xl' />
+                    <img src={source.featuredimage} loading={'lazy'} alt="featured_image" className='rounded-md drop-shadow-2xl' />
 
                 </div>
 
@@ -149,7 +154,7 @@ function EachProject({ source }) {
                                         {item.image.map((item, index) => (
                                             <PhotoView key={index} src={item}>
                                                 <div className='break-inside-avoid'>
-                                                    <img src={item} alt="featured_image" className='rounded-md drop-shadow-2xl cursor-grab' />
+                                                    <img src={item} loading={'lazy'} alt="featured_image" className='rounded-md drop-shadow-2xl cursor-grab' />
                                                 </div>
                                             </PhotoView>
                                         ))}
@@ -230,7 +235,8 @@ function EachProject({ source }) {
                             <div className="columns-1 gap-3 lg:w-[1000px] mx-auto lg:space-y-3 space-y-2 mb-2">
                                 <PhotoView src={source.footerimage}>
                                     <div className='break-inside-avoid'>
-                                        <img src={source.footerimage} alt="Footer Image" className='rounded-md drop-shadow-2xl' />
+                                        {console.log(source.footerimage)}
+                                        <img src={source.footerimage} loading={'lazy'} placeholder={""} alt="Footer Image" draggable={false} className='rounded-md drop-shadow-2xl' />
                                     </div>
                                 </PhotoView>
                             </div>
