@@ -30,13 +30,13 @@ const Hero = () => {
         href="https://www.forbes.com/profile/pubarun-basu/"
         rel="noreferrer"
         target={"_blank"}
-        className=""
+        className="md:block hidden"
       >
         <ForbTag className="right-0 bottom-[10vh] fixed" />
       </a>
 
       {/* Sidebar social */}
-      <div className="flex flex-col gap-5 items-center h-[1vh]  absolute top-[10rem] left-0 transform-gpu">
+      <div className="md:flex hidden flex-col gap-5 items-center h-[1vh]  absolute top-[10rem] left-0 transform-gpu">
         <div className="border border-[#333333] absolute pr-[10rem] z-[-10rem] w-[12rem] h-0 transform -rotate-90"></div>
         <div className="flex items-center flex-col gap-[6rem] px-[3vw] py-[3vh]  bg-[#DCDCDC] z-[1]">
           <div className="transform -rotate-90 bg-[#DCDCDC] pr-5">FORBES</div>
@@ -48,8 +48,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* content main */}
-      <div className="flex flex-col space-y-10">
+      {/* content main desktop */}
+      <div className="lg:flex hidden flex-col space-y-10">
         <div className="flex justify-center items-center">
           <div
             className={` ${montserrat.variable} text-[#333333] pl-[15vw] pr-[10vw] font-Montserrat  pt-[13vh] z-[50rem]`}
@@ -70,16 +70,16 @@ const Hero = () => {
             src={heroCamera}
             alt="hero"
             priority
-            className="md:w-[20rem] lg:w-[30vw] translate-y-[5rem]"
+            className="sm:w-[10vm] md:w-[20rem] lg:w-[30vw] translate-y-[5rem]"
             draggable={false}
             quality={50}
           />
         </div>
 
         <div className="flex items-baseline m-9 gap-[5vw] pl-[18vw]">
-          <SonyAww />
-          <BirlaAww />
-          <IndicaAww />
+          <SonyAww className="w-36" />
+          <BirlaAww className="w-48" />
+          <IndicaAww className="w-40" />
 
           <Link href="/about">
             <div className="flex space-x-2 text-sm font-semibold pb-9 hover:-translate-y-1 hover:scale-110 duration-700 transition ease-in-out delay-150">
@@ -87,6 +87,40 @@ const Hero = () => {
               <ArrowLinkIcon />
             </div>
           </Link>
+        </div>
+      </div>
+
+      {/* mobile */}
+      <div className="flex lg:hidden flex-col space-y-10 px-2 md:px-[10vw]">
+        <div className="flex flex-col justify-center  relative pb-12 md:pl-[15vw] md:pr-[10vw]">
+          <div className='basis-1 justify-end flex w-full items-end '>
+            <Image
+              src={heroCamera}
+              alt="hero"
+              priority
+              className="w-48 sm:w-72 translate-y-8 translate-x-2"
+              draggable={false}
+            />
+          </div>
+
+
+          <div className={` ${montserrat.variable} w-fit text-[#333333] absolute top-16  font-Montserrat  z-10`}>
+            <div className="relative">
+              <div className="text-3xl">Hello,</div>
+              <div className="text-6xl font-medium text-[#333333]">I am <br /> Pubarun.</div>
+            </div>
+          </div>
+        </div>
+        <div
+          className={`${poppins.variable} font-Poppins    text-base md:text-xl font-medium text-black pt-7`}
+        >
+          I am a young photographer documenting the coexistence of people, culture, and environment.
+        </div>
+
+        <div className="flex items-center justify-center gap-5">
+          <SonyAww className="w-full" />
+          <BirlaAww className="w-full" />
+          <IndicaAww className="w-full" />
         </div>
       </div>
     </div>

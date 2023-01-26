@@ -20,7 +20,7 @@ const Navbar = ({ isFixed }) => {
   return (
     <div className={`${() => { return (isFixed ? "fixed" : "") }} px-[3vw] `}>
       <div className='flex text-[#333333] text-2xl font-semibold py-6 px-[5vw] justify-between items-center'>
-        <Link href={"/"} >PUBARUN BASU</Link>
+        <Link href={"/"} className='text-base lg:text-2xl' >PUBARUN BASU</Link>
         <div className='lg:flex hidden flex-row justify-center items-center text-xl space-x-6'>
           <div className={`${prata.variable} font-Prata font-light`}>
             {/* making the First char Uppercase */}
