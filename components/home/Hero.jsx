@@ -113,15 +113,15 @@ const Hero = () => {
           </div>
         </div>
         <div
-          className={`${poppins.variable} font-Poppins   text-[10px] font-medium text-black pt-7`}
+          className={`${poppins.variable} font-Poppins   sm:text-[10px] text-base font-medium text-black pt-7`}
         >
           I am a young photographer documenting the coexistence of people, culture, and environment.
         </div>
 
         <div className="flex items-center justify-center gap-5">
-          <SonyAww />
-          <BirlaAww />
-          <IndicaAww />
+          <SonyAww className="w-full" />
+          <BirlaAww className="w-full" />
+          <IndicaAww className="w-full" />
         </div>
       </div>
     </div>
