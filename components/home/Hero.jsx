@@ -30,13 +30,13 @@ const Hero = () => {
         href="https://www.forbes.com/profile/pubarun-basu/"
         rel="noreferrer"
         target={"_blank"}
-        className="lg:block hidden"
+        className="md:block hidden"
       >
         <ForbTag className="right-0 bottom-[10vh] fixed" />
       </a>
 
       {/* Sidebar social */}
-      <div className="lg:flex hidden flex-col gap-5 items-center h-[1vh]  absolute top-[10rem] left-0 transform-gpu">
+      <div className="md:flex hidden flex-col gap-5 items-center h-[1vh]  absolute top-[10rem] left-0 transform-gpu">
         <div className="border border-[#333333] absolute pr-[10rem] z-[-10rem] w-[12rem] h-0 transform -rotate-90"></div>
         <div className="flex items-center flex-col gap-[6rem] px-[3vw] py-[3vh]  bg-[#DCDCDC] z-[1]">
           <div className="transform -rotate-90 bg-[#DCDCDC] pr-5">FORBES</div>
@@ -91,8 +91,8 @@ const Hero = () => {
       </div>
 
       {/* mobile */}
-      <div className="flex lg:hidden flex-col space-y-10 px-2">
-        <div className="flex flex-col justify-end  relative pb-12">
+      <div className="flex lg:hidden flex-col space-y-10 px-2 md:px-[10vw]">
+        <div className="flex flex-col justify-center  relative pb-12 md:pl-[15vw] md:pr-[10vw]">
           <div className='basis-1 justify-end flex w-full items-end '>
             <Image
               src={heroCamera}
@@ -104,16 +104,15 @@ const Hero = () => {
           </div>
 
 
-          <div className={` ${montserrat.variable} w-full text-[#333333] absolute top-16  font-Montserrat  z-10`}>
+          <div className={` ${montserrat.variable} w-fit text-[#333333] absolute top-16  font-Montserrat  z-10`}>
             <div className="relative">
               <div className="text-3xl">Hello,</div>
               <div className="text-6xl font-medium text-[#333333]">I am <br /> Pubarun.</div>
             </div>
-            <span class="absolute top-0 left-0 w-full h-full z-0"></span>
           </div>
         </div>
         <div
-          className={`${poppins.variable} font-Poppins   sm:text-[10px] text-base font-medium text-black pt-7`}
+          className={`${poppins.variable} font-Poppins    text-base md:text-xl font-medium text-black pt-7`}
         >
           I am a young photographer documenting the coexistence of people, culture, and environment.
         </div>
