@@ -1,8 +1,9 @@
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import React, { useState } from "react";
 import { ArticleCard, SideSection } from "../components";
 import { DockerNav, Navbar } from "../components/common";
-import { featureData, awardData, workData } from "../components/work/data";
+import { featureData ,awardData, workData } from "../components/work/data";
 
 
 
@@ -28,6 +29,7 @@ function Work() {
             console.log(value);
           }
         } />
+
 
         <div className="flex flex-col overflow-y-scroll ">
 

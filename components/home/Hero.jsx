@@ -39,9 +39,16 @@ const Hero = () => {
       <div className="md:flex hidden flex-col gap-5 items-center h-[1vh]  absolute top-[10rem] left-0 transform-gpu">
         <div className="border border-[#333333] absolute pr-[10rem] z-[-10rem] w-[12rem] h-0 transform -rotate-90"></div>
         <div className="flex items-center flex-col gap-[6rem] px-[3vw] py-[3vh]  bg-[#DCDCDC] z-[1]">
-          <div className="transform -rotate-90 bg-[#DCDCDC] pr-5">FORBES</div>
-          <div className="transform -rotate-90">FACEBOOK</div>
-          <div className="transform -rotate-90">INSTAGRAM</div>
+          <a href="https://twitter.com/pubarun_b" target="_blank" rel="noopener noreferrer">
+            <div className="transform -rotate-90 bg-[#DCDCDC] pr-5">Twitter</div>
+          </a>
+          <a href="https://www.linkedin.com/in/pubarun/" target="_blank" rel="noopener noreferrer">
+            <div className="transform -rotate-90">LinkedIn</div>
+          </a>
+          <a href="https://www.instagram.com/pubarun.basu/" target="_blank" rel="noopener noreferrer">
+            <div className="transform -rotate-90">INSTAGRAM</div>
+          </a>
+
         </div>
         <div>
           <Thinstar />
@@ -81,7 +88,7 @@ const Hero = () => {
           <BirlaAww className="w-48" />
           <IndicaAww className="w-40" />
 
-          <Link href="/about">
+          <Link href="/work">
             <div className="flex space-x-2 text-sm font-semibold pb-9 hover:-translate-y-1 hover:scale-110 duration-700 transition ease-in-out delay-150">
               <span className="border-b-2  border-[#222222]"> CHECK ALL</span>
               <ArrowLinkIcon />
