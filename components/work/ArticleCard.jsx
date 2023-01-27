@@ -14,10 +14,11 @@ const ArticleCard = ({ title, description, link, logo, alt }) => {
                             {title}
                         </h1>
                     </a>
-                    <Image draggable={false} src={logo} alt={alt} className=' sm:w-16 md:w-28 lg:w-36 h-auto' width={200} height={100} />
+                    <img draggable={false} src={logo} alt={alt} className='max-w-xs w-auto h-20'/>
+                    {console.log(logo)}
                 </div>
-                <div className="flex lg:flex-row flex-col lg:justify-between lg:items-end gap-2">
-                    <p className=" lg:max-w-[35vw]">
+                <div className="flex justify-between items-end">
+                    <p className=" max-w-[35vw]">
                         {description}
                     </p>
 

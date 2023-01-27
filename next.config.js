@@ -10,9 +10,6 @@ const nextConfig = {
     });
     return config;
   },
-  images: {
-    domains: ["i.postimg.cc"],
-  },
 };
 
 module.exports = nextConfig;
