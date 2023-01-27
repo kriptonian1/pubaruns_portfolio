@@ -16,7 +16,7 @@ const WorkSeen = () => {
     ]
 
     return (
-        <div className='pl-[5vw] pr-[5vw] pt-[19vh]'>
+        <div className='lg:pl-[5vw] lg:pr-[5vw] pt-[19vh]'>
 
             <div className='flex items-center justify-between'>
                 <HeadLinesHome title={"WORKS SEEN & FEATURED ON"} />
@@ -26,7 +26,7 @@ const WorkSeen = () => {
             </div>
 
 
-            <div className='grid gap-y-9 gap-2 grid-cols-3 grid-rows-2 mx-[12vw] my-[7vh] items-center'>
+            <div className='grid lg:gap-y-9 gap-2 grid-cols-3 grid-rows-2 m-5 mt-8 lg:mx-[12vw] lg:my-[7vh] items-center'>
                 {work.map((item, index) => {
                     return (
                         <Image draggable={false} key={index} src={item} alt={`${item} Pubarun`} />

@@ -16,7 +16,7 @@ const poppins = Poppins(
 
 const PhotoSection = () => {
     return (
-        <div className={`${poppins.variable} font-Poppins pl-[5vw] pr-[5vw] pt-[19vh]`}>
+        <div className={`${poppins.variable} font-Poppins lg:pl-[5vw] lg:pr-[5vw] lg:pt-[19vh] pt-[9vh]`}>
 
             <div className='flex items-center justify-between'>
                 <HeadLinesHome title={"PHOTO GALLERY"} />
@@ -47,14 +47,14 @@ const PhotoSection = () => {
                 </div>
 
 
-                <div className='md:hidden absolute left-[96px] top-7 z-10'>
+                <div className='md:hidden absolute left-5 top-7 z-10'>
                     <div>
                         <div className=' pt-[10vh] pl-[50px] lg:text-3xl font-semibold '>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu fermentum dui.
                         </div>
                     </div>
                     <div className=' sm:pt-20 pt-16 text-black font-Poppins font-normal' >
-                        Suspendisse potenti. Nulla facilisi. Praesent vestibulum eros dolor, ut maximus lacus pulvinar in. Nam at pellentesque erat, quis viverra erat. Praesent faucibus nibh a urna vulputate porta. Integer ut fermentum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Born along the shores of the river, I have stood witness to its majestic flow that transcends the boundaries of our material world. The river has rejuvenated my existence, allowing me to explore its depths and rediscover the histories of civilizations past. But I am not alone.
                     </div>
                 </div>
             </div>
