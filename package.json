@@ -12,11 +12,14 @@
     "@next/font": "^13.1.1",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "gsap": "^3.11.4",
     "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-photo-view": "^1.2.3",
-    "sharp": "^0.31.3"
+    "sharp": "^0.31.3",
+    "smooth-scrollbar": "^8.8.1",
+    "split-type": "^0.3.3"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.5.1",

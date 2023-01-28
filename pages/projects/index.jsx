@@ -5,6 +5,7 @@ import { HeadCard, ProjectCard, ShortsSection } from '../../components/projects'
 import Head from 'next/head'
 import Data from '../../data/Project/index.json'
 import { projectThumb, projectThumb1, projectThumb2, projectThumb3 } from '../../components/projects/assets'
+import Scroll from '../../lib/SmoothScroll'
 
 const poppins = Poppins(
     {
@@ -19,7 +20,8 @@ const projects = () => {
 
 
     return (
-        <div>
+        <div className='h-[100vh]'>
+            <Scroll />
             <Head>
                 {/* metadata locale */}
                 <meta property="og:locale" content="en_US" />

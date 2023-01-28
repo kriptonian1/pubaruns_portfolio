@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Montserrat, Poppins } from '@next/font/google'
 import { ArrowLinkIcon, BirlaAww, ForbsLogo, ForbTag, heroCamera, IndicaAww, SonyAww, Thinstar } from './assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Navbar } from '../common'
+import gsap, { Back, Power3 } from 'gsap'
+import SplitType from 'split-type'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -21,6 +23,71 @@ const poppins = Poppins(
 )
 
 const Hero = () => {
+
+  let heroImgRef = React.useRef(null);
+  let heroTextRef1 = React.useRef(null);
+  let heroTextRef2 = React.useRef(null);
+  let heroTextRef3 = React.useRef(null);
+
+  let awwRef = React.useRef(null);
+
+  useEffect(
+    () => {
+
+      let textSplit1 = new SplitType(heroTextRef1)
+      let chars1 = textSplit1.chars;
+
+      let textSplit2 = new SplitType(heroTextRef2)
+      let chars2 = textSplit2.chars;
+
+      gsap.from(chars1, {
+        stagger: 0.05,
+        opacity: 1,
+        duration: 0.7,
+        y: 100,
+        ease: Power3.easeInOut,
+        delay: 0.5,
+      })
+
+      gsap.from(chars2, {
+        stagger: 0.05,
+        opacity: 1,
+        duration: 0.7,
+        y: 100,
+        ease: Power3.easeInOut,
+        delay: 0.5,
+      })
+
+      gsap.to(heroTextRef3,
+        {
+          opacity: 1,
+          duration: 0.5,
+          x: 0,
+          ease: Power3.easeInOut,
+          delay: 0.5,
+        })
+
+
+      gsap.to(heroImgRef,
+        {
+          opacity: 1,
+          duration: 0.5,
+          x: 0,
+          ease: Power3.easeInOut,
+          delay: 0.5,
+        })
+
+      gsap.to(awwRef,
+        {
+          opacity: 1,
+          duration: 0.5,
+          x: 0,
+          ease: Power3.easeInOut,
+          delay: 0.5,
+        })
+    },
+    []
+  )
 
   return (
     <div>
@@ -46,7 +113,7 @@ const Hero = () => {
             <div className="transform -rotate-90">LinkedIn</div>
           </a>
           <a href="https://www.instagram.com/pubarun.basu/" target="_blank" rel="noopener noreferrer">
-            <div className="transform -rotate-90">INSTAGRAM</div>
+            <div className="transform -rotate-90">Instagram</div>
           </a>
 
         </div>
@@ -62,12 +129,24 @@ const Hero = () => {
             className={` ${montserrat.variable} text-[#333333] pl-[15vw] pr-[10vw] font-Montserrat  pt-[13vh] z-[50rem]`}
           >
             <div className="">
-              <div className="xl:text-5xl md:text-4xl">Hello,</div>
-              <div className=" md:text-7xl font-medium">I am Pubarun.</div>
+              <div
+                style={{ clipPath: 'polygon(0 0, 100% 1%, 100% 100%, 0% 100%)', }}
+                ref={el => { heroTextRef1 = el }}
+                className="xl:text-5xl md:text-4xl transition-all translate-y-[10px]">
+                Hello,
+              </div>
+              <div
+                style={{ clipPath: 'polygon(0 0, 100% 1%, 100% 100%, 0% 100%)', }}
+                ref={el => { heroTextRef2 = el }}
+                className=" md:text-7xl font-medium ">
+                I am Pubarun.
+              </div>
             </div>
 
             <div
-              className={`${poppins.variable} font-Poppins w-[30vw] text-xl font-medium text-black pt-7`}
+              // style={{ clipPath: 'polygon(0 0, 100% 1%, 100% 100%, 0% 100%);', }}
+              ref={el => { heroTextRef3 = el }}
+              className={`${poppins.variable} font-Poppins w-[30vw] text-xl font-medium text-black pt-7 opacity-0`}
             >
               I am a young photographer documenting the coexistence of people, culture, and environment.
             </div>
@@ -75,15 +154,18 @@ const Hero = () => {
 
           <Image
             src={heroCamera}
+            ref={el => { heroImgRef = el }}
             alt="hero"
             priority
-            className="sm:w-[10vm] md:w-[20rem] lg:w-[30vw] translate-y-[5rem]"
+            className="sm:w-[10vm] md:w-[20rem] lg:w-[30vw] translate-y-[5rem] opacity-0"
             draggable={false}
             quality={50}
           />
         </div>
-
-        <div className="flex items-baseline m-9 gap-[5vw] pl-[18vw]">
+        <div
+          ref={el => { awwRef = el }}
+          className="flex items-baseline m-9 gap-[5vw] pl-[18vw] opacity-0"
+        >
           <SonyAww className="w-36" />
           <BirlaAww className="w-48" />
           <IndicaAww className="w-40" />
