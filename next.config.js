@@ -1,16 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  fs: "empty",
   webpack(config) {
-    fs: 'empty'
     config.module.rules.push({
       test: /\.svg$/i,
       issuer: /\.[jt]sx?$/,
-      use: ['@svgr/webpack'],
-    })
-
-    return config
+      use: ["@svgr/webpack"],
+    });
+    return config;
   },
-}
+  images: {
+    domains: ["i.postimg.cc"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

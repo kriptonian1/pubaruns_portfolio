@@ -43,12 +43,12 @@ const SideSection = ({
                 <div onClick={() => setisActive("worked")} className={`${scaleonSelect(isactive === "worked")} flex cursor-pointer items-center text-lg font-semibold`}>
                     <div className={` ${lineOnSelect(isactive === "worked")} border border-[#000000] h-0 w-[200px] mr-[1rem]`}></div>
                     <button>
-                        WORKED WITH
+                        WORKSHOPS
                     </button>
 
                 </div>
             </div>
-            <div className="fixed  left-[40vw] border border-[#000000] w-0 h-[84vh] my-4 "></div>
+            <div className="fixed   left-[40vw] border border-[#000000] w-0 h-[84vh] my-4 "></div>
         </div>
 
     )

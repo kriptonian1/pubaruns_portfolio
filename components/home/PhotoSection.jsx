@@ -15,38 +15,50 @@ const poppins = Poppins(
 )
 
 const PhotoSection = () => {
+
+    const photoSectionRef = React.useRef(null);
+    const scrollRef = React.useRef(null);
+
     return (
-        <div className={`${poppins.variable} font-Poppins pl-[5vw] pr-[5vw] pt-[19vh]`}>
+        <div className={`${poppins.variable} font-Poppins lg:pl-[5vw] lg:pr-[5vw] lg:pt-[19vh] pt-[9vh]  overflow-hidden`}>
 
             <div className='flex items-center justify-between'>
                 <HeadLinesHome title={"PHOTO GALLERY"} />
-                <Link className='flex text-sm underline items-center font-semibold hover:-translate-y-1 hover:scale-110 duration-700 transition ease-in-out delay-150' href="/work">
+                <Link className='lg:flex hidden text-sm underline items-center font-semibold hover:-translate-y-1 hover:scale-110 duration-700 transition ease-in-out delay-150' href="/gallery">
                     VIEW ALL<LinkLogo />
                 </Link>
             </div>
 
-            <div className='flex ml-12 pt-10 mb-9'>
-                <div className='flex'>
+            <div className='flex ml-12 pt-10 mb-9 flex-col relative '>
+                <div className='flex basis-3/4 mb-[8vh]'>
 
-                    <Image className='grayscale hover:grayscale-0 transition-all w-[40rem] ' width={2048} height={1268} src={photo1} alt="photo1" />
-                    <div className={`  translate-y-[-4rem] z-[-1] translate-x-[-1.8rem] text-[84px] font-black text-[#333333]`}>
+                    <Image draggable={false} className='grayscale hover:grayscale-0 transition-all lg:w-[60vw]' width={2048} height={1268} src={photo1} alt="photo1" />
+                    <div className={`  lg:translate-y-[-4rem] translate-y-[-2rem] z-[-1] lg:translate-x-[-1.8rem] translate-x-[-3.2rem] lg:text-[84px] text-[40px] font-black text-[#333333]`}>
                         01.
                     </div>
                 </div>
 
-                <div>
-                    <div>
-                        <div className='w-[50vw] pt-[10vh] pl-6 text-3xl font-medium '>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu fermentum dui.
-                        </div>
-                        <div className='pl-[4rem] text-lg  w-[50vw] pt-6' >
-                            Suspendisse potenti. Nulla facilisi. Praesent vestibulum eros dolor, ut maximus lacus pulvinar in. Nam at pellentesque erat, quis viverra erat. Praesent faucibus nibh a urna vulputate porta. Integer ut fermentum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </div>
-                    </div>
+            </div>
 
-                    <div className='border border-[#000000] w-[10rem] ml-[60%] mt-7'></div>
+            <div className='flex mr-14 pt-10 mb-9 flex-col relative lg:items-end'>
+                <div className='flex basis-3/4 mb-[8vh]'>
+                    <div className={`lg:translate-y-[-5.4rem] translate-y-[-2rem] z-[-1] lg:translate-x-[7.3rem] translate-x-[1.2rem] lg:text-[84px] text-[40px] font-black text-[#333333]`}>
+                        02.
+                    </div>
+                    <Image draggable={false} className='grayscale hover:grayscale-0 transition-all lg:w-[60vw]' width={2048} height={1268} src={photo1} alt="photo1" />
+
                 </div>
 
+            </div>
+
+            <div className='flex ml-12 pt-10 mb-9 flex-col relative '>
+                <div className='flex basis-3/4 mb-[8vh]'>
+
+                    <Image draggable={false} className='grayscale hover:grayscale-0 transition-all lg:w-[60vw]' width={2048} height={1268} src={photo1} alt="photo1" />
+                    <div className={`  lg:translate-y-[-4rem] translate-y-[-2rem] z-[-1] lg:translate-x-[-1.8rem] translate-x-[-1.2rem] lg:text-[84px] text-[40px] font-black text-[#333333]`}>
+                        03.
+                    </div>
+                </div>
 
             </div>
 

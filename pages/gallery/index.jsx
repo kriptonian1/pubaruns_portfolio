@@ -6,6 +6,7 @@ import 'react-photo-view/dist/react-photo-view.css';
 import Image from "next/image";
 
 import GalleryDatas from './data.json'
+import Head from "next/head";
 
 
 const Gallery = () => {
@@ -154,6 +155,69 @@ const Gallery = () => {
 
     return (
         <div className="">
+            <Head>
+                {/* metadata locale */}
+                <meta property="og:locale" content="en_US" />
+                <meta property="twitter:locale" content="en_US" />
+
+                {/* metadat title */}
+                <title>Gallery | Pubarun Basu</title>
+                <meta property="og:title" content="Gallery | Pubarun Basu" />
+                <meta property="twitter:title" content="Gallery | Pubarun Basu" />
+
+                {/* metadat url */}
+                <meta property="og:url" content="https://www.pubarunbasu.com/gallery" />
+                <meta property="twitter:url" content="https://www.pubarunbasu.com/gallery" />
+
+                {/* metadat image */}
+                <meta
+                    property="og:image"
+                    content="https://i.postimg.cc/Y9yzLMd5/Black-White-Modern-Photography-Tips-You-Tube-Thumbnail-4-1.png"
+                ></meta>
+                <meta
+                    property="twitter:image"
+                    content="https://i.postimg.cc/Y9yzLMd5/Black-White-Modern-Photography-Tips-You-Tube-Thumbnail-4-1.png"
+                ></meta>
+
+                {/* metadat type */}
+                <meta property="og:type" content="website" />
+                <meta property="twitter:type" content="website" />
+
+                {/* metadat site name */}
+                <meta property="og:site_name" content="Gallery | Pubarun Basu" />
+                <meta property="twitter:site_name" content="Gallery | Pubarun Basu" />
+
+                {/* metadat twitter card */}
+                <meta property="twitter:card" content="summary_large_image" />
+
+                {/* Description meatadata */}
+                <meta
+                    name="description"
+                    content="Explore the breathtaking photography portfolio of Pubarun, a renowned professional photographer. View a diverse range of themes including documentary, photojournalism, street, portraits, lifestyle, travel, conceptual, and monochrome photography. Discover Pubarun's areas of focus including people and culture, society, the interconnectedness of man and nature, human history, traditions and rituals, tribal communities, coexistence, conservation, environment, spirituality, sustainability, mindfulness, inclusion, leadership, and education. Experience the beauty and complexity of the human experience through Pubarun's lens and gain insight into the important issues of our time. Visit the gallery now to see Pubarun's award-winning work."
+                />
+                <meta
+                    property="og:description"
+                    content="Explore the breathtaking photography portfolio of Pubarun, a renowned professional photographer. View a diverse range of themes including documentary, photojournalism, street, portraits, lifestyle, travel, conceptual, and monochrome photography. Discover Pubarun's areas of focus including people and culture, society, the interconnectedness of man and nature, human history, traditions and rituals, tribal communities, coexistence, conservation, environment, spirituality, sustainability, mindfulness, inclusion, leadership, and education. Experience the beauty and complexity of the human experience through Pubarun's lens and gain insight into the important issues of our time. Visit the gallery now to see Pubarun's award-winning work."
+                />
+                <meta
+                    property="twitter:description"
+                    content="Explore the breathtaking photography portfolio of Pubarun, a renowned professional photographer. View a diverse range of themes including documentary, photojournalism, street, portraits, lifestyle, travel, conceptual, and monochrome photography. Discover Pubarun's areas of focus including people and culture, society, the interconnectedness of man and nature, human history, traditions and rituals, tribal communities, coexistence, conservation, environment, spirituality, sustainability, mindfulness, inclusion, leadership, and education. Experience the beauty and complexity of the human experience through Pubarun's lens and gain insight into the important issues of our time. Visit the gallery now to see Pubarun's award-winning work."
+                />
+
+                {/* metadata twitter */}
+                <meta name="twitter:creator" content="@pubarun_b" />
+                <meta name="twitter:site" content="@pubarun_b" />
+                <meta property="twitter:site:id" content="@pubarun_b"></meta>
+
+                {/* metadata robots */}
+                <meta name="robots" content="index, follow" />
+
+                {/* metadata keywords */}
+                <meta
+                    property="og:keywords"
+                    content="pubarun photographer gallery ,photography gallery, photo gallery, professional photography gallery, renowned photographer gallery, documentary photography gallery, photojournalism gallery, street photography gallery, portrait photography gallery, lifestyle photography gallery, travel photography gallery, conceptual photography gallery, monochrome photography gallery, people and culture photography gallery, society photography gallery, interconnectedness of man and nature photography gallery, human history photography gallery, traditions and rituals photography gallery, tribal communities photography gallery, coexistence photography gallery, conservation photography gallery, environmental photography gallery, spirituality photography gallery, sustainability photography gallery, mindfulness photography gallery, inclusion photography gallery, leadership photography gallery, education photography gallery, human experience photography gallery, award-winning photography gallery"
+                />
+            </Head>
             <Navbar />
 
             <div className="mx-[7.5vw] grid grid-cols-5 gap-5">
@@ -179,7 +243,7 @@ const Gallery = () => {
                         }
 
                     </div>
-                    
+
                     <div className="flex flex-row justify-center pt-10">
                         <div className="basis-1/4">
                             <div className="flex flex-col justify-start items-start gap-8 py-10 pl-10">
@@ -214,6 +278,7 @@ const Gallery = () => {
                                                 <div className='break-inside-avoid'>
                                                     <Image src={mainsatge?.path}
                                                         alt="featured_image"
+                                                        draggable={false}
                                                         className='rounded-md drop-shadow-2xl cursor-grab !w-full !h-[50vh]'
                                                         width={500} height={500} />
                                                     <div className="flex justify-start items-start text-start w-full">
@@ -243,6 +308,7 @@ const Gallery = () => {
                                         }
                                     >
                                         <Image src={item.path}
+                                            draggable={false}
                                             alt="featured_image"
                                             className='rounded-md drop-shadow-2xl cursor-pointer !w-full !h-full hover:grayscale-0 transition-all grayscale'
                                             width={500} height={500} />

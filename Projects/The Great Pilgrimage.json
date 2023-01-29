@@ -1,57 +1,68 @@
 {
-    "title": "The Great Pilgrimage",
-    "date": "July 2022",
-    "description": "The photo series portrays the journey to freedom for the Ramnamis, a lower caste tribe in India, and the permanent tattoos ....",
-    "image": "/projects/The Great Pilgrimage/Additional/Header Image(1).jpg",
-    "slug": "Wangala",
-    "location_Name": "Solapur, Maharashtra, India",
-    "location_link": "https://goo.gl/maps/NkiVw7ioF8oyaKrx6",
-    "quote": "The Warkaris' Quest to Spiritual Enlightenment",
-    "subquote": null,
-    "theme": [
-        "Ancient Traditions and Rituals",
-        "Pilgrimage of the Agrarian Community",
-        "Devotion and Spirituality"
-    ],
-    "commissioned_by": "Mr. Parvez Damania and Mr. Ratan Luth",
-    "commissioned_link": null,
-    "inassociation_with": " Maharashtra Department of Tourism",
-    "inassociation_link": null,
-    "featuredimage": "/projects/The Great Pilgrimage/Additional/PBS07975.jpg",
-    "category": [{
-            "title": "Preamble",
-            "description": "In the state of Maharashtra in India, an 800 years old tradition still finds its way in the modern world. In the month of Asadh, the agrarian community of Maharashtra set out on a pilgrimage after sowing the seeds of a new harvest. As the blue haze slowly dissipates from the night sky, thousands of white clothed 'Warkaris' start pouring into a barren land surrounded by lush greenery. Having travelled a couple hundred kilometres, they finally gather together to prepare the stage for their grand ceremonial practices. The unwavering devotion towards their deity ' Vithalla ' finds its expression through their unique way of life.",
-            "image": [
-                "/projects/The Great Pilgrimage/01_In the Blue Haze.jpg",
-                "/projects/The Great Pilgrimage/05_The Motif of a Floating Saree.jpg",
-                "/projects/The Great Pilgrimage/02_Ceremonies and Contemplations.jpg",
-                "/projects/The Great Pilgrimage/04_The Endless Journey.jpg",
-                "/projects/The Great Pilgrimage/03_Conversations in Between.jpg"
-            ]
-        },
-        {
-            "title": "The Way of the Warkaris",
-            "description": "The journey of the Warkaris is as fascinating as their formidable characters. The sense of community is deeply rooted in their cultural fabric - something that constitutes the very notion of their identity. Looking into their eyes, one can feel the strong connection of spirituality that they share with their deity. The women, usually shy in their household, find an opportunity to express their blithely spirits through fun games, devotional songs and so much more. The men, dressed in all white, carry the palkhi of their religious saint on their shoulders and join in on the musical celebrations. Therein lies a vivid transformation in the lives of these devotees.",
-            "image": [
-                "/projects/The Great Pilgrimage/08_The One Above All.jpg",
-                "/projects/The Great Pilgrimage/10_Eyes of Wonder.jpg",
-                "/projects/The Great Pilgrimage/11_The Joy of Life.jpg",
-                "/projects/The Great Pilgrimage/06_In a Moment of Soliloquy.jpg",
-                "/projects/The Great Pilgrimage/12_Wind of Change.jpg",
-                "/projects/The Great Pilgrimage/09_Songs of Devotion.jpg",
-                "/projects/The Great Pilgrimage/07_Faith.jpg"
-            ]
-        }, {
-            "title": "March of the Devotees",
-            "description": "The days of the Wari Pilgrimage are filled with rituals, traditions and practices that constitute the cultural identity of the pilgrims. Lakhs of people gather on the ceremonial grounds to celebrate their holy deity. As they near their ultimate destination in Pandharpur and the air fills with the sweet melodies of bhajans, the people pause and reflect on one of the greatest experiences they have ever lived through.",
-            "image": [
-                "/projects/The Great Pilgrimage/13_Unity.jpg",
-                "/projects/The Great Pilgrimage/14_The Hero Among Us.jpg",
-                "/projects/The Great Pilgrimage/15_The Mythological Horse of Ringan.jpg",
-                "/projects/The Great Pilgrimage/16_Dancers of the Earth.jpg",
-                "/projects/The Great Pilgrimage/17_The Gate to Infinity.jpg"
-            ]
-        }
-    ],
-    "footerimage": "/projects/The Great Pilgrimage/Additional/Footer Image.jpg"
+  "title": "The Great Pilgrimage",
+  "thumbnail": "https://i.postimg.cc/XNLhc9Cc/try-1-1.png",
+  "meta_description": "In the state of Maharashtra in India, an 800 years old tradition still finds its way in the modern world. In the month of Asadh, the agrarian community of Maharashtra set out on a pilgrimage after sowing the seeds of a new harvest. As the blue haze slowly dissipates from the night sky, thousands of white clothed 'Warkaris' start pouring into a barren land surrounded by lush greenery. Having travelled a couple hundred kilometres, they finally gather together to prepare the stage for their grand ceremonial practices. The unwavering devotion towards their deity ' Vithalla ' finds its expression through their unique way of life.",
+  "date": "July 2022",
+  "meta_date": "01-07-2022",
+  "meta_tag": [
+    "Ancient Traditions",
+    "Pilgrimage of the Agrarian Community",
+    "Devotion and Spirituality"
+  ],
+  "meta_keywords": "The Great Pilgrimage, Wangala, Solapur, Maharashtra, India, Preamble, The Way of the Warkaris, March of the Devotees, The Warkaris' Quest to Spiritual Enlightenment, Ancient Traditions and Rituals, Pilgrimage of the Agrarian Community, Devotion and Spirituality, Mr. Parvez Damania and Mr. Ratan Luth, Maharashtra Department of Tourism",
+  "description": "The photo series portrays the journey to freedom for the Ramnamis, a lower caste tribe in India, and the permanent tattoos ....",
+  "image": "/projects/The Great Pilgrimage/Additional/Header Image(1).jpg",
+  "slug": "Wangala",
+  "location_Name": "Solapur, Maharashtra, India",
+  "location_link": "https://goo.gl/maps/NkiVw7ioF8oyaKrx6",
+  "quote": "The Warkaris' Quest to Spiritual Enlightenment",
+  "subquote": null,
+  "theme": [
+    "Ancient Traditions and Rituals",
+    "Pilgrimage of the Agrarian Community",
+    "Devotion and Spirituality"
+  ],
+  "commissioned_by": "Mr. Parvez Damania and Mr. Ratan Luth",
+  "commissioned_link": null,
+  "inassociation_with": " Maharashtra Department of Tourism",
+  "inassociation_link": null,
+  "featuredimage": "/projects/The Great Pilgrimage/Additional/PBS07975.jpg",
+  "category": [
+    {
+      "title": "Preamble",
+      "description": "In the state of Maharashtra in India, an 800 years old tradition still finds its way in the modern world. In the month of Asadh, the agrarian community of Maharashtra set out on a pilgrimage after sowing the seeds of a new harvest. As the blue haze slowly dissipates from the night sky, thousands of white clothed 'Warkaris' start pouring into a barren land surrounded by lush greenery. Having travelled a couple hundred kilometres, they finally gather together to prepare the stage for their grand ceremonial practices. The unwavering devotion towards their deity ' Vithalla ' finds its expression through their unique way of life.",
+      "image": [
+        "/projects/The Great Pilgrimage/01_In the Blue Haze.jpg",
+        "/projects/The Great Pilgrimage/05_The Motif of a Floating Saree.jpg",
+        "/projects/The Great Pilgrimage/02_Ceremonies and Contemplations.jpg",
+        "/projects/The Great Pilgrimage/04_The Endless Journey.jpg",
+        "/projects/The Great Pilgrimage/03_Conversations in Between.jpg"
+      ]
+    },
+    {
+      "title": "The Way of the Warkaris",
+      "description": "The journey of the Warkaris is as fascinating as their formidable characters. The sense of community is deeply rooted in their cultural fabric - something that constitutes the very notion of their identity. Looking into their eyes, one can feel the strong connection of spirituality that they share with their deity. The women, usually shy in their household, find an opportunity to express their blithely spirits through fun games, devotional songs and so much more. The men, dressed in all white, carry the palkhi of their religious saint on their shoulders and join in on the musical celebrations. Therein lies a vivid transformation in the lives of these devotees.",
+      "image": [
+        "/projects/The Great Pilgrimage/08_The One Above All.jpg",
+        "/projects/The Great Pilgrimage/10_Eyes of Wonder.jpg",
+        "/projects/The Great Pilgrimage/11_The Joy of Life.jpg",
+        "/projects/The Great Pilgrimage/06_In a Moment of Soliloquy.jpg",
+        "/projects/The Great Pilgrimage/12_Wind of Change.jpg",
+        "/projects/The Great Pilgrimage/09_Songs of Devotion.jpg",
+        "/projects/The Great Pilgrimage/07_Faith.jpg"
+      ]
+    },
+    {
+      "title": "March of the Devotees",
+      "description": "The days of the Wari Pilgrimage are filled with rituals, traditions and practices that constitute the cultural identity of the pilgrims. Lakhs of people gather on the ceremonial grounds to celebrate their holy deity. As they near their ultimate destination in Pandharpur and the air fills with the sweet melodies of bhajans, the people pause and reflect on one of the greatest experiences they have ever lived through.",
+      "image": [
+        "/projects/The Great Pilgrimage/13_Unity.jpg",
+        "/projects/The Great Pilgrimage/14_The Hero Among Us.jpg",
+        "/projects/The Great Pilgrimage/15_The Mythological Horse of Ringan.jpg",
+        "/projects/The Great Pilgrimage/16_Dancers of the Earth.jpg",
+        "/projects/The Great Pilgrimage/17_The Gate to Infinity.jpg"
+      ]
+    }
+  ],
+  "footerimage": "/projects/The Great Pilgrimage/Additional/Footer Image.jpg"
 }
