@@ -2,5 +2,6 @@ import DockerNav from "./DockerNav";
 import HeadLinesHome from "./HeadLinesHome";
 import LinkComponent from "./LinkComponent";
 import Navbar from "./Navbar";
+import MobileDockerNav from './MobileDockerNav'
 
-export { DockerNav, Navbar, HeadLinesHome, LinkComponent };
+export { DockerNav, MobileDockerNav, Navbar, HeadLinesHome, LinkComponent };
