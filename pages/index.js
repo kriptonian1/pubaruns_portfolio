@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 import Scrollbar from "smooth-scrollbar";
 import { Hero, PhotoSection, WorkSeen } from "../components";
-import { DockerNav } from "../components/common";
+import { DockerNav, MobileDockerNav } from "../components/common";
 import Scroll from "../lib/SmoothScroll";
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    Scrollbar.init( ref, options);
+    Scrollbar.init(ref, options);
     console.log(ref);
   });
 
@@ -106,11 +106,12 @@ export default function Home() {
         />
       </Head>
 
-      <div ref={el => {ref =el}} className="h-[100vh]">
+      <div ref={el => { ref = el }} className="h-[100vh]">
         <Hero />
         <WorkSeen />
         <PhotoSection />
       </div>
+      <MobileDockerNav isVisible={true} />
       <DockerNav isVisible={true} />
     </div>
   );
