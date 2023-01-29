@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import React, { useState } from "react";
 import { ArticleCard, SideSection } from "../components";
-import { DockerNav, Navbar } from "../components/common";
+import { DockerNav, Navbar, MobileDockerNav } from "../components/common";
 import { featureData, awardData, workData } from "../components/work/data";
 
 
@@ -20,7 +20,7 @@ function Work() {
       </Head>
 
       <Navbar isFixed={true} />
-      <div className="grid grid-cols-2 grid-rows-2 gap-0">
+      <div className="grid grid-cols-2  gap-0">
         <div className="col-span-2 lg:hidden overflow-y-scroll">
 
           {/* mobile viewpoint for feeds */}
@@ -73,6 +73,11 @@ function Work() {
             }
           </div>
         </div>
+
+
+
+
+        {/* large viewpoint for feeds */}
         <SideSection isactive={ActiveArticle} setisActive={
           (value) => {
             // taking the new value from the component and assigning to parent
@@ -80,7 +85,6 @@ function Work() {
             // console.log(value);
           }
         } />
-        {/* large viewpoint for feeds */}
         <div className="lg:flex hidden lg:flex-col lg:overflow-y-scroll ">
 
           {
@@ -132,6 +136,7 @@ function Work() {
       </div>
 
       <DockerNav isVisible={true} />
+      <MobileDockerNav isVisible={true} />
     </>
   );
 };
