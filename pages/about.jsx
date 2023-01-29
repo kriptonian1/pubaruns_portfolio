@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { useState } from "react";
 import { ArticleCard, SideSection } from "../components";
-import { DockerNav, Navbar } from "../components/common";
+import { DockerNav, Navbar, MobileDockerNav } from "../components/common";
 import { featureData, awardData, workData } from "../components/work/data";
 
 
@@ -21,6 +21,7 @@ function about() {
 
             </div>
             <DockerNav isVisible={true} />
+            <MobileDockerNav isVisible={true} />
         </>
     )
 }
