@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { DockerNav, Navbar } from "../../components/common";
+import { DockerNav, Navbar, MobileDockerNav } from "../../components/common";
 // import { getPaths } from "../lib/gallery";
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
@@ -320,6 +320,7 @@ const Gallery = () => {
                 </div>
             </div >
             <DockerNav isVisible={true} />
+            <MobileDockerNav isVisible={true} />
         </div >
     );
 };

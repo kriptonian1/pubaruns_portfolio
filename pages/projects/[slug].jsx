@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { getProjectFromSlug, getSlugs } from "../../lib/project";
-import { Navbar } from '../../components/common'
+import { Navbar, MobileDockerNav } from '../../components/common'
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
@@ -275,6 +275,8 @@ function EachProject({ source }) {
                 )
 
             }
+
+            <MobileDockerNav isVisible={true} />
 
         </div>
     )

@@ -3,14 +3,29 @@ import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 
 /**
- * @description DockerNav is a component that is used to navigate between pages
+ * @description MobileDockerNav is a component that is used to navigate between pages
  * @param {boolean} isVisible - This is a boolean that is used to show or hide the component 
  * @returns {JSX.Element} - Returns a JSX.Element
  */
 const MobileDockerNav = ({ isVisible }) => {
 
     const route = useRouter()
-    const currrentRoute = route.pathname;
+    let currrentRoute = route.pathname;
+    // if the current route is / make it Home
+    if (currrentRoute === '/') {
+        currrentRoute = 'Home'
+    }
+    // if the current route is /projects/[slug] get the slug from the path
+    // else if (currrentRoute.includes('/projects/')) {
+    //     currrentRoute = currrentRoute.split('/')[2]
+    // }
+    // // if the current route is /work get the # value from the route 
+    // else if (currrentRoute.includes('/work')) {
+    //     currrentRoute = currrentRoute.split('#')[1]
+    // }
+    else {
+        currrentRoute = currrentRoute.slice(1)
+    }
     const [ToggleMenu, setToggleMenu] = useState(false);
 
     const highlightOnRoute = (isRoute) => {
@@ -24,10 +39,9 @@ const MobileDockerNav = ({ isVisible }) => {
 
     return (
         <div className='flex lg:hidden justify-center '>
-            <nav style={{ visibility: isVisible ? 'visible' : 'hidden' }} className={`fixed z-[999] flex justify-evenly items-center bottom-9 transition-all duration-200 ${isVisible ? 'opacity-100 visible' : 'hidden opacity-0'}  shadow-2xl flex gap-7 text-[#DCDCDC] bg-[#3e3e3ecc] border-[10px] backdrop-blur-sm md:px-[15px] px-2 md:py-[5px] border-[#0000001a] md:w-[40rem] w-[20rem] md:rounded-[20px] rounded-[20px]`}>
-
+            <nav style={{ visibility: isVisible ? 'visible' : 'hidden' }} className={`fixed z-[999] flex justify-evenly items-center bottom-9 transition-all duration-200 ${isVisible ? 'opacity-100 visible' : 'hidden opacity-0'}  shadow-2xl flex gap-7 text-[#DCDCDC] bg-[#3e3e3ecc] border-[10px] backdrop-blur-sm md:px-[15px] px-2 md:py-[5px] border-[#0000001a] md:w-[40rem] w-[15rem] md:rounded-[20px] rounded-[20px]`}>
                 <div>
-                    <h1 className='capitalize py-[10px] transition-all rounded-md duration-500  font-semibold  px-[10px]'>{currrentRoute.slice(1)}</h1>
+                    <h1 className='capitalize py-[10px] transition-all rounded-md duration-500  font-semibold  px-[10px]'>{currrentRoute}</h1>
                 </div>
                 <div className='relative'>
                     <div className='cursor-pointer' onClick={
@@ -44,7 +58,7 @@ const MobileDockerNav = ({ isVisible }) => {
                         </div>
                     </div>
                     <div className={`absolute bottom-16 w-36 ${ToggleMenu ? 'visible' : 'hidden'} py-2 -left-11 `}>
-                        <div className='flex flex-col gap-2 justify-center items-center text-center text-black  bg-[#3e3e3ecc] border-[10px] rounded-md backdrop-blur-sm md:px-[15px] px-2 md:py-[5px] border-[#0000001a]'>
+                        <div className='flex flex-col gap-2 justify-center items-center text-center text-white  bg-[#3e3e3ecc] border-[10px] rounded-md backdrop-blur-sm md:px-[15px] px-2 md:py-[5px] border-[#0000001a]'>
                             <Link href='/'>
                                 <div className={`${highlightOnRoute(currrentRoute === "/")} py-[10px] transition-all rounded-md duration-500  font-semibold  px-[10px]`}>
                                     Home
