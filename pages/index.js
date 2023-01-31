@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
-import Scrollbar from "smooth-scrollbar";
-import { Hero, PhotoSection, WorkSeen } from "../components";
-import { DockerNav, MobileDockerNav } from "../components/common";
-import Scroll from "../lib/SmoothScroll";
+// import Scrollbar from "smooth-scrollbar";
+import { Hero, PhotoSection, ProjectSection, WorkSeen } from "../components";
+import { DockerNav, Footer, MobileDockerNav } from "../components/common";
+// import Scroll from "../lib/SmoothScroll";
 
 export default function Home() {
   // const [isVisible, setIsVisible] = useState(false);
@@ -30,18 +30,18 @@ export default function Home() {
   //   };
   // });
 
-  let options = {
-    damping: 0.07,
-  };
+  // let options = {
+  //   damping: 0.07,
+  // };
 
-  useEffect(() => {
-    Scrollbar.init(ref, options);
-    console.log(ref);
-  });
+  // useEffect(() => {
+  //   Scrollbar.init(ref, options);
+  //   console.log(ref);
+  // });
 
   return (
-    <div >
-      <Scroll />
+    <div className="overflow-x-hidden">
+      {/* <Scroll /> */}
       <Head>
         {/* metadata locale */}
         <meta property="og:locale" content="en_US" />
@@ -106,13 +106,15 @@ export default function Home() {
         />
       </Head>
 
-      <div ref={el => { ref = el }} className="h-[100vh]">
+      <div >
         <Hero />
         <WorkSeen />
         <PhotoSection />
+        <ProjectSection />
       </div>
       <MobileDockerNav isVisible={true} />
       <DockerNav isVisible={true} />
+      <Footer />
     </div>
   );
 }

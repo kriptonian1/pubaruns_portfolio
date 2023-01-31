@@ -18,7 +18,6 @@
     "react-dom": "18.2.0",
     "react-photo-view": "^1.2.3",
     "sharp": "^0.31.3",
-    "smooth-scrollbar": "^8.8.1",
     "split-type": "^0.3.3"
   },
   "devDependencies": {

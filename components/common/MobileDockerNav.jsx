@@ -57,7 +57,7 @@ const MobileDockerNav = ({ isVisible }) => {
                             </svg>
                         </div>
                     </div>
-                    <div className={`absolute bottom-16 w-36 ${ToggleMenu ? 'visible' : 'hidden'} py-2 -left-11 `}>
+                    <div className={`absolute bottom-16 w-36 ${ToggleMenu ? 'visible' : 'hidden'} py-2 -left-11`}>
                         <div className='flex flex-col gap-2 justify-center items-center text-center text-white  bg-[#3e3e3ecc] border-[10px] rounded-md backdrop-blur-sm md:px-[15px] px-2 md:py-[5px] border-[#0000001a]'>
                             <Link href='/'>
                                 <div className={`${highlightOnRoute(currrentRoute === "/")} py-[10px] transition-all rounded-md duration-500  font-semibold  px-[10px]`}>

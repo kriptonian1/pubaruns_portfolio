@@ -18,6 +18,10 @@ import LinkLogo from "./linkLogo.svg";
 
 // photos
 import photo1 from "./PubarunBasu7.jpg";
+import photo2 from "./BoatingthroughtheCrystallineRiver.jpg";
+import photo3 from "./NoEscapefromReality.jpg";
+import photo4 from "./TheMotifofaFlowingSaree.jpg";
+import photo5 from "./GameofColours.jpg";
 
 export {
   Thinstar,
@@ -36,4 +40,8 @@ export {
   SonyWPO_Logo,
   LinkLogo,
   photo1,
+  photo2,
+  photo3,
+  photo4,
+  photo5,
 };
