@@ -33,18 +33,18 @@ const PhotoSection = () => {
                 <div className='flex basis-3/4 mb-[8vh]'>
 
                     <Image draggable={false} loading={'lazy'} placeholder='blur' className='grayscale hover:grayscale-0 transition-all duration-300 lg:w-[60vw]' width={2048} height={1268} src={photo1} alt="photo1" />
-                    <div className={`  lg:translate-y-[-4rem] translate-y-[-2rem] z-[-1] lg:translate-x-[-1.8rem] translate-x-[-3.2rem] lg:text-[84px] text-[40px] font-black text-[#333333]`}>
+                    {/* <div className={`  lg:translate-y-[-4rem] translate-y-[-2rem] z-[-1] lg:translate-x-[-1.8rem] translate-x-[-3.2rem] lg:text-[84px] text-[40px] font-black text-[#333333]`}>
                         01.
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
 
             <div className='flex mr-14 pt-10 mb-9 flex-col relative lg:items-end'>
                 <div className='flex basis-3/4 mb-[8vh]'>
-                    <div className={`lg:translate-y-[-5.4rem] translate-y-[-2rem] z-[-1] lg:translate-x-[7.3rem] translate-x-[1.2rem] lg:text-[84px] text-[40px] font-black text-[#333333]`}>
+                    {/* <div className={`lg:translate-y-[-5.4rem] translate-y-[-2rem] z-[-1] lg:translate-x-[7.3rem] translate-x-[1.2rem] lg:text-[84px] text-[40px] font-black text-[#333333]`}>
                         02.
-                    </div>
+                    </div> */}
                     <Image draggable={false} loading={'lazy'} placeholder='blur' className='grayscale hover:grayscale-0 transition-all duration-300 lg:w-[60vw]' width={2048} height={1268} src={photo2} alt="photo1" />
 
                 </div>
@@ -55,18 +55,18 @@ const PhotoSection = () => {
                 <div className='flex basis-3/4 mb-[8vh]'>
 
                     <Image draggable={false} loading={'lazy'} placeholder='blur' className='grayscale hover:grayscale-0 transition-all duration-300 lg:w-[60vw]' width={2048} height={1268} src={photo3} alt="photo1" />
-                    <div className={`  lg:translate-y-[-4rem] translate-y-[-2rem] z-[-1] lg:translate-x-[-1.8rem] translate-x-[-1.2rem] lg:text-[84px] text-[40px] font-black text-[#333333]`}>
+                    {/* <div className={`  lg:translate-y-[-4rem] translate-y-[-2rem] z-[-1] lg:translate-x-[-1.8rem] translate-x-[-1.2rem] lg:text-[84px] text-[40px] font-black text-[#333333]`}>
                         03.
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
 
             <div className='flex mr-14 pt-10 mb-9 flex-col relative lg:items-end'>
                 <div className='flex basis-3/4 mb-[8vh]'>
-                    <div className={`lg:translate-y-[-5.4rem] translate-y-[-2rem] z-[-1] lg:translate-x-[7.3rem] translate-x-[1.2rem] lg:text-[84px] text-[40px] font-black text-[#333333]`}>
+                    {/* <div className={`lg:translate-y-[-5.4rem] translate-y-[-2rem] z-[-1] lg:translate-x-[7.3rem] translate-x-[1.2rem] lg:text-[84px] text-[40px] font-black text-[#333333]`}>
                         04.
-                    </div>
+                    </div> */}
                     <Image draggable={false} loading={'lazy'} placeholder='blur' className='grayscale hover:grayscale-0 transition-all duration-300 lg:w-[60vw]' width={2048} height={1268} src={photo5} alt="photo1" />
 
                 </div>

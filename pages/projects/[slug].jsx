@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { getProjectFromSlug, getSlugs } from "../../lib/project";
-import { Navbar, MobileDockerNav } from '../../components/common'
+import { Navbar, MobileDockerNav, Footer, DockerNav } from '../../components/common'
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
@@ -116,14 +116,19 @@ function EachProject({ source }) {
 
                 <div className='absolute inset-0 text-center flex flex-col justify-center items-center gap-0'>
                     <h1 className='lg:text-8xl text-xl lg:leading-[117px] font-black text-white font-Bodoni'>{source.title}</h1>
-                    <p className='lg:text-xl text-xs italic text-white font-Poppins lg:m-[17px] font-light'>A photo Series by <span className='not-italic lg:text-4xl text-xl pl-2 text-white'>Pubarun Basu</span></p>
+                    <p className='lg:text-xl text-xs italic text-white font-Poppins lg:m-[17px] font-light'> by <span className='not-italic lg:text-4xl text-xl pl-2 text-white'>Pubarun Basu</span></p>
                     <p className=' text-white font-Poppins text-sm lg:text-lg'>{source.date}</p>
                 </div>
                 <div className='absolute bottom-1 lg:p-10  w-full p-2'>
                     <div className='flex flex-row justify-between '>
                         <div>
                             {/* ! to be fixed */}
-                            <p className='text-white font-Poppins'>Image goes here :)</p>
+                            {/* <p className='text-white font-Poppins'>{source.commissioned_image} </p> */}
+                            {
+                                source.commissioned_image
+                                &&
+                                <Image src={source.commissioned_image} draggable={false} alt={"commissioned_image"} width={100} height={100} />
+                            }
                         </div>
                         <div className='flex flex-row justify-end items-center'>
                             <svg width="18" height="14" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,16 +161,7 @@ function EachProject({ source }) {
                         {
                             source.commissioned_by && (
 
-                                <p className='lg:text-2xl italic font-Poppins my-5'>Commissioned by  <span className='font-bold not-italic hover:underline-offset-2 underline cursor-pointer' onClick={
-                                    () => {
-                                        if (commissioned_link) {
-                                            window.open(source.commissioned_link, '_blank')
-                                        } else {
-                                            // do nothing
-                                        }
-                                    }
-
-                                }>{source.commissioned_by}</span></p>
+                                <p className='lg:text-2xl italic font-Poppins my-5'>{source.colabType} by  <a href={source.commissioned_link} target={'_blank'} rel="noreferrer" className='font-bold not-italic hover:underline-offset-2 underline cursor-pointer'>{source.commissioned_by}</a></p>
                             )
                         }
                         {
@@ -277,6 +273,9 @@ function EachProject({ source }) {
             }
 
             <MobileDockerNav isVisible={true} />
+            <DockerNav isVisible={true} />
+
+            <Footer />
 
         </div>
     )

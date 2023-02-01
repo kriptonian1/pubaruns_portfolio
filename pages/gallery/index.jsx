@@ -135,7 +135,7 @@ const Gallery = () => {
     }
     const categoryOnSelect = (select) => {
         if (select) {
-            return "underline";
+            return "font-bold";
         }
         return "no-underline";
     }
@@ -229,7 +229,7 @@ const Gallery = () => {
                                 (item, index) => {
                                     return (
                                         <div key={index} className="flex flex-row justify-center items-center cursor-pointer">
-                                            <div className={`${categoryOnSelect(category === item)} text-black capitalize font-Montserrat text-xl leading-[29.26px] font-medium`}
+                                            <div className={`${categoryOnSelect(category === item)} text-black capitalize font-Montserrat text-xl leading-[29.26px] `}
                                                 onClick={(e) => {
                                                     setcategory(
                                                         item

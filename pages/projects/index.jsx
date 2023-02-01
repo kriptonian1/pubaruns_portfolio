@@ -1,5 +1,5 @@
 import React from 'react'
-import { DockerNav, Navbar, MobileDockerNav } from '../../components/common'
+import { DockerNav, Navbar, MobileDockerNav, Footer } from '../../components/common'
 import { Poppins } from '@next/font/google'
 import { HeadCard, ProjectCard, ShortsSection } from '../../components/projects'
 import Head from 'next/head'
@@ -58,6 +58,7 @@ const projects = () => {
             </div>
             <DockerNav isVisible={true} />
             <MobileDockerNav isVisible={true} />
+            <Footer />
         </div>
     )
 }

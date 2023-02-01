@@ -99,7 +99,7 @@ const Hero = () => {
         target={"_blank"}
         className="md:block hidden"
       >
-        <ForbTag className="right-0 bottom-[10vh] fixed" />
+        <ForbTag className="right-0 bottom-[10vh] absolute" />
       </a>
 
       {/* Sidebar social */}
@@ -118,7 +118,7 @@ const Hero = () => {
 
         </div>
         <div>
-          <Thinstar />
+          {/* <Thinstar /> */}
         </div>
       </div>
 
