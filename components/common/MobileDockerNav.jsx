@@ -57,7 +57,7 @@ const MobileDockerNav = ({ isVisible }) => {
                             </svg>
                         </div>
                     </div>
-                    <div className={`absolute bottom-16 w-36 ${ToggleMenu ? 'visible' : 'hidden'} py-2 -left-11`}>
+                    <div className={`absolute bottom-16 w-36 ${ToggleMenu ? 'visible' : 'hidden'} py-2 -left-11 backdrop-blur-sm`}>
                         <div className='flex flex-col gap-2 justify-center items-center text-center text-white  bg-[#3e3e3ecc] border-[10px] rounded-md backdrop-blur-sm md:px-[15px] px-2 md:py-[5px] border-[#0000001a]'>
                             <Link href='/'>
                                 <div className={`${highlightOnRoute(currrentRoute === "/")} py-[10px] transition-all rounded-md duration-500  font-semibold  px-[10px]`}>
@@ -91,36 +91,6 @@ const MobileDockerNav = ({ isVisible }) => {
                         </div>
                     </div>
                 </div>
-                {/* <Link href='/'>
-                    <div className={`${highlightOnRoute(currrentRoute === "/")} py-[10px] transition-all rounded-md duration-500  font-semibold  px-[10px]`}>
-                        Home
-                    </div>
-                </Link>
-
-                <Link href='/work'>
-                    <div className={`${highlightOnRoute(currrentRoute === "/work")} py-[10px]  text-[] transition-all duration-500 font-semibold rounded-md  px-[10px]`}>
-                        Work & Feature
-                    </div>
-                </Link>
-
-                <Link href='/gallery'>
-                    <div className={`${highlightOnRoute(currrentRoute === "/gallery")}  py-[10px] transition-all duration-500  rounded-md text-[] font-semibold bg-[] px-[10px]`}>
-                        Gallery
-                    </div>
-                </Link>
-
-                <Link href='/projects'>
-                    <div className={`${highlightOnRoute(currrentRoute === '/projects')} py-[10px] transition-all duration-500 rounded-md text-[] font-semibold bg-[] px-[10px]`}>
-                        Projects
-                    </div>
-                </Link>
-
-                <Link href='/about'>
-                    <div className={`${highlightOnRoute(currrentRoute === '/about')} py-[10px] transition-all duration-500 rounded-md text-[] font-semibold bg-[] px-[10px]`}>
-                        About Me
-                    </div>
-                </Link> */}
-
             </nav >
         </div >
     )

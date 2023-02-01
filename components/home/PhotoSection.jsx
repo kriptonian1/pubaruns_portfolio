@@ -20,7 +20,7 @@ const PhotoSection = () => {
     const scrollRef = React.useRef(null);
 
     return (
-        <div className={`${poppins.variable} font-Poppins lg:pl-[5vw] lg:pr-[5vw] lg:pt-[19vh] pt-[9vh]  overflow-hidden`}>
+        <div className={`${poppins.variable} font-Poppins lg:pl-[5vw] lg:pr-[5vw] lg:pt-[19vh] pt-[9vh] overflow-hidden`}>
 
             <div className='flex items-center justify-between'>
                 <HeadLinesHome title={"PHOTO GALLERY"} />

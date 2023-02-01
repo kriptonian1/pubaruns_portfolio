@@ -106,14 +106,15 @@ export default function Home() {
         />
       </Head>
 
-      <div >
+      <div>
         <Hero />
         <WorkSeen />
         <PhotoSection />
         <ProjectSection />
       </div>
-      <MobileDockerNav isVisible={true} />
       <DockerNav isVisible={true} />
+      <MobileDockerNav isVisible={true} />
+
       <Footer />
     </div>
   );

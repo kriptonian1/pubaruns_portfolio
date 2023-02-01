@@ -29,9 +29,15 @@ const Navbar = ({ isFixed }) => {
           <Humburger />
         </div>
         <div className='flex lg:hidden  flex-row justify-center items-center text-xl space-x-6'>
-          <Facebook className="!w-5" />
-          <Instagram />
-          <Twitter />
+          <a href="https://www.facebook.com/pubarun/" target="_blank" rel="noopener noreferrer">
+            <Facebook className="!w-5" />
+          </a>
+          <a href="https://www.instagram.com/pubarun.basu/" target="_blank" rel="noopener noreferrer">
+            <Instagram />
+          </a>
+          <a href="https://twitter.com/pubarun_b" target="_blank" rel="noopener noreferrer">
+            <Twitter />
+          </a>
         </div>
 
       </div>
