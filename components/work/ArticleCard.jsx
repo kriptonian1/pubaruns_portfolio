@@ -14,14 +14,14 @@ const ArticleCard = ({ title, description, link, logo, alt }) => {
                             {title}
                         </h1>
                     </a>
-                    <Image draggable={false} src={logo} alt={alt} className=' sm:w-16 md:w-28 lg:w-36 h-auto' width={200} height={100} />
+                    {logo && <Image draggable={false} src={logo} alt={alt} className=' sm:w-16 md:w-28 lg:w-36 h-auto' width={200} height={100} />}
                 </div>
                 <div className="flex lg:flex-row flex-col lg:justify-between lg:items-end gap-2">
                     <p className=" lg:max-w-[35vw]">
                         {description}
                     </p>
 
-                    <LinkComponent linkText="VIEW ARTICLE" link={link} />
+                    {link && <LinkComponent linkText="VIEW ARTICLE" link={link} />}
                 </div>
             </div>
         </div>
