@@ -28,7 +28,7 @@ export const getStaticPaths = async () => {
 
 
 function EachProject({ source }) {
-    console.log(source);
+    // console.log(source);
     return (
         <div>
             <Head>
