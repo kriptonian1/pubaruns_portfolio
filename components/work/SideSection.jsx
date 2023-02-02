@@ -18,9 +18,9 @@ const SideSection = ({
 
     const lineOnSelect = (select) => {
         if (select) {
-            return "lg:w-[200px] w-[100px]";
+            return "lg:w-[200px] !w-[100px]";
         }
-        return "lg:w-[100px] w-[50px]";
+        return "lg:w-[100px] !w-[50px]";
     }
     return (
         <div className="flex">
