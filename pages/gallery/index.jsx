@@ -220,7 +220,7 @@ const Gallery = () => {
                             {sidestage &&
                                 sidestage?.map((item, index) => {
                                     return (
-                                        <div key={index} className='break-inside-avoid snap-center w-40'
+                                        <div key={index} className='break-inside-avoid snap-center w-[150px] h-[150px]'
                                             onClick={
                                                 (e) => {
                                                     setMainstage(item)
@@ -230,8 +230,8 @@ const Gallery = () => {
                                             <Image src={item.path}
                                                 draggable={false}
                                                 alt="featured_image"
-                                                className='rounded-md drop-shadow-2xl bg-cover cursor-pointer w-40 h-40 lg:w-full lg:h-auto hover:grayscale-0 transition-all grayscale'
-                                                width={1000} height={1000} />
+                                                className='rounded-md drop-shadow-2xl bg-cover cursor-pointer w-full h-full hover:grayscale-0 transition-all grayscale'
+                                                width={500} height={500} />
                                         </div>
                                     );
                                 })
