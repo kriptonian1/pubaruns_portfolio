@@ -147,7 +147,7 @@ const Gallery = () => {
                             Category.map(
                                 (item, index) => {
                                     return (
-                                        <div key={index} className="flex flex-row justify-center items-center cursor-pointer text-ellipsis">
+                                        <div key={index} className="flex flex-row justify-center items-center cursor-pointer text-ellipsis min-w-fit">
                                             <div className={`${categoryOnSelect(category === item)} text-black text-ellipsis capitalize font-Montserrat lg:text-xl lg:leading-[29.26px] `}
                                                 onClick={(e) => {
                                                     setcategory(
@@ -169,7 +169,7 @@ const Gallery = () => {
                                 {
                                     Year.reverse().map((item, index) => {
                                         return (
-                                            <div key={index} className={`${scaleonSelect(year === item)}flex flex-row justify-start items-start cursor-pointer`}>
+                                            <div key={index} className={`${scaleonSelect(year === item)}flex flex-row justify-start items-start cursor-pointer w-10`}>
                                                 <div className={`${yearOnSelect(year === item)} text-black capitalize font-Poppins lg:text-3xl lg:leading-[29.26px] font-normal `}
                                                     onClick={(e) => {
                                                         setyear(
@@ -215,12 +215,12 @@ const Gallery = () => {
 
                 {/* gallery side bar */}
                 <div className="lg:col-span-1 col-span-5 pb-28 lg:pb-0">
-                    <div className="flex lg:flex-col lg:overflow-y-scroll  overflow-x-scroll w-full lg:h-[87vh] ">
-                        <div className="flex flex-row lg:flex-col justify-center items-center lg:gap-5 lg:px-5">
+                    <div className="flex lg:flex-col overflow-scroll  lg:h-[87vh] ">
+                        <div className="flex flex-row gap-5 lg:flex-col justify-center items-center lg:gap-5 lg:px-5">
                             {sidestage &&
                                 sidestage?.map((item, index) => {
                                     return (
-                                        <div key={index} className='break-inside-avoid snap-center'
+                                        <div key={index} className='break-inside-avoid snap-center w-40'
                                             onClick={
                                                 (e) => {
                                                     setMainstage(item)
@@ -230,8 +230,8 @@ const Gallery = () => {
                                             <Image src={item.path}
                                                 draggable={false}
                                                 alt="featured_image"
-                                                className='rounded-md drop-shadow-2xl bg-cover w-fu cursor-pointer w-40 h-40 hover:grayscale-0 transition-all grayscale'
-                                                width={500} height={500} />
+                                                className='rounded-md drop-shadow-2xl bg-cover cursor-pointer w-40 h-40 lg:w-full lg:h-auto hover:grayscale-0 transition-all grayscale'
+                                                width={1000} height={1000} />
                                         </div>
                                     );
                                 })
@@ -240,6 +240,9 @@ const Gallery = () => {
                     </div>
                 </div>
             </div >
+
+
+
             <DockerNav isVisible={true} />
             <MobileDockerNav isVisible={true} />
         </div >
