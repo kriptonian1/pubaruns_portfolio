@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import React, { useState } from "react";
 import { ArticleCard, SideSection } from "../components";
-import { DockerNav, Navbar, MobileDockerNav } from "../components/common";
+import { DockerNav, Navbar, MobileDockerNav, Footer } from "../components/common";
 import { featureData, awardData, workData } from "../components/work/data";
 
 

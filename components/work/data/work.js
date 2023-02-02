@@ -1,33 +1,106 @@
-
-
 const workData = [
-    {
-        id: 1,
-        title: "Work 01",
-        description:
-            "The Youth Photographer of the Year award went to 19-year-old Pubarun Basu from India, for his image No Escape from Reality, which uses cage-like shadows behind curtains to convey a sense of entrapment.",
-        image: "https://i.postimg.cc/52wJwjkF/BBC-Logo.png",
-        alt: "bbc-logo",
-        link: "https://www.bbc.com/news/in-pictures-56719188",
-    },
-    {
-        id: 1,
-        title:
-            "Work 02",
-        description:
-            "Selected from six category winners, Pubarun Basu (India, 19 years-old) has won Youth Photographer of the Year 2021 for his image No Escape from Reality. In the photograph the shadows of railings projected onto curtains create the illusion of cage bars from behind which a pair of hands is seen as if trying to break through. The illusion of shadows and hands gesture convey a sense of entrapment shared by so many across the world this past year. For his win Basu receives Sony’s digital imaging kit and global exposure.",
-        image: "https://i.postimg.cc/Kjh9QmYp/image-18-3.png",
-        alt: "the-telegaph-logo",
-        link: "https://www.telegraph.co.uk/news/2021/04/15/fourteen-spectacular-winning-images-sony-world-photography-awards/",
-    },
-    {
-        id: 1,
-        title: "Work 03",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nisl nisl aliquet nisl, eu aliquam nisl lorem quis nisl. Sed euismod, nunc ut aliquam aliquam, nisl nisl aliquet nisl, eu aliquam nisl lorem quis nisl.",
-        image: "/images/stock-photos.jpg",
-        link: "https://www.pubarun.com",
-    }
+  {
+    id: 1,
+    title: "National Geographic Society and The Nature Conservancy",
+    description:
+      "Freshwater Conservation Extern + Seed-Fund Project Recipient 2023",
+    image: "/work/commiLogo.png",
+    alt: "bbc-logo",
+    link: null,
+  },
+  {
+    id: 2,
+    title: "Harvard Project for Asian and International Relations 2022",
+    description: "Delegate – Harvard Asia Conference 2022",
+    image: "/work/Harvard-Project-for-Asian-and-International-Relations-removebg-preview.png",
+    alt: "the-telegaph-logo",
+    link: null,
+  },
+  {
+    id: 3,
+    title: "Rare with Google",
+    description: "Delegate - Leadership Academy 2022",
+    image: "/work/google-logo-icon-png-transparent-background-osteopathy-16.png",
+    link: null,
+  },
+  {
+    id: 4,
+    title: "Goethe Institut / Maxmuller Bhavan India",
+    description: "Commissioned Artist 2022",
+    image: "/work/Goethe-Institut_Logo.png",
+    link: null,
+  },
+  {
+    id: 5,
+    title: "Indica",
+    description: "Grantee – Indica Culture Photography Grant 2021",
+    image: "/work/INDICA-white-logo.svg",
+    link: null,
+  },
+  {
+    id: 6,
+    title: "Stanford University",
+    description: "Music Research Analyst – Baul Musician’s Project 2021",
+    image: "/work/stanford-university-logo-1.png",
+    link: null,
+  },
+  {
+    id: 7,
+    title: "Youthtopia",
+    description: "Circle of Youth Member 2023",
+    image: "/work/0-removebg-preview.png",
+    link: null,
+  },
+  {
+    id: 8,
+    title: "Tokenance",
+    description: "Signed Photographer",
+    image: "/work/tokannce-token-orange-highres-01.png",
+    link: null,
+  },
+  {
+    id: 9,
+    title: "CASP India",
+    description: "Collaborator – The Photo-Inclusion Project 2023",
+    image: "/work/CASP.png",
+    link: null,
+  },
+  {
+    id: 10,
+    title: "KultX",
+    description: "Collaborator – The River Festival 2023 ",
+    image: "/work/cropped-KultxLogo1-01-1-oyno15miya6tyusfq1lzmh2vgb0tf8sqsrkngnuosg.png",
+    link: null,
+  },
+  {
+    id: 11,
+    title: "AIESEC",
+    description: "Educator - World’s Largest Lesson 2019",
+    image: "/work/1754025.png",
+    link: null,
+  },
+  {
+    id: 12,
+    title: "IIT Hyderabad",
+    description: "Workshop on “The Realms of Coexistence” 2023",
+    image: "/work/270-2702875_iit-hyderabad-logo-indian-institute-of-technology-hyderabad-removebg-preview.png",
+    link: null,
+  },
+  {
+    id: 13,
+    title: "South Point High School",
+    description:
+      "Workshop on “Photography as a Medium for Environmental Activism” 2022",
+    image: "/work/logo (8).png",
+    link: null,
+  },
+  {
+    id: 14,
+    title: "The Creative Arts Academy",
+    description: "Workshop on “Mindfulness with Arts – Rhythm”",
+    image: null,
+    link: null,
+  },
 ];
 
 export default workData;
