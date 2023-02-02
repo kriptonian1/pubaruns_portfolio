@@ -9,21 +9,26 @@ const ShortsSection = () => {
             title: 'Tales of the Seven Huts',
             date: 'Nov, 2021',
             image: shortsThumb,
+            slug: "Tales of the Seven Huts"
         },
         {
             title: 'Reminiscence',
             date: 'Dec, 2020',
             image: shortsThumb2,
+            slug: 'Reminiscence'
         },
         {
             title: 'A Riot of Colours',
             date: '23 Oct, 2021',
             image: shortsThumb3,
+            slug: 'A Riot of Colours'
+
         },
         {
             title: 'Inside the Secret Sanctuary',
             date: '23 Oct, 2021',
             image: shortsThumb1,
+            slug: 'Inside the Secret Sanctuary'
         }
     ]
 
@@ -41,7 +46,7 @@ const ShortsSection = () => {
                     data.map((item, index) => {
                         return (
                             <div key={index}>
-                                <ShortsCard title={item.title} date={item.date} image={item.image} />
+                                <ShortsCard title={item.title} date={item.date} image={item.image} slug={item.slug} />
                             </div>
                         )
                     })
