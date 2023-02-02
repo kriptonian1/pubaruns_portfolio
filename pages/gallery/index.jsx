@@ -11,7 +11,6 @@ import Head from "next/head";
 
 const Gallery = () => {
 
-    const [mainData, setMainData] = useState(GalleryDatas)
     const [mainsatge, setMainstage] = useState()
     const [sidestage, setSidestage] = useState()
     const [year, setyear] = useState(2023)
@@ -37,86 +36,6 @@ const Gallery = () => {
         "Portraits"
     ]
 
-    const GalleryData = [
-        '/projects/assets/01_The Flow of Civilization.jpg',
-        '/projects/In the Name of God/01_Marks of Resistance.jpg',
-        '/projects/In the Name of God/02_Symbols.jpg',
-        '/projects/In the Name of God/03_Reflections.jpg',
-        '/projects/In the Name of God/04_The Upasak.jpg',
-        '/projects/In the Name of God/05_Tales of Revolution.jpg',
-        '/projects/In the Name of God/06_The Holy Scriptures.jpg',
-        '/projects/In the Name of God/07_Vigour.jpg',
-        '/projects/In the Name of God/08_People of the Sacred Land.jpg',
-        '/projects/In the Name of God/09_The Veil of Resistance.jpg',
-        '/projects/In the Name of God/10_The New Tomorrow.jpg',
-        '/projects/In the Name of God/11_The Advent of Modernity.jpg',
-        '/projects/In the Name of God/12_Omnipresence.jpg',
-        '/projects/In the Name of God/Additional/13_The God in our Universe.jpg',
-        '/projects/In the Name of God/Additional/Footer Image.jpg',
-        '/projects/In the Name of God/Additional/Header Image.jpg',
-        '/projects/In the Name of God/Additional/Main.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Additional/_PB07985.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Additional/_PB08195cc.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Additional/_PB08431.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Additional/Header Image.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Additional/Main alternative_.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Additional/Main.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Additional/PB0_5189.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Chronicles of a Tale Foretold/01_Of Valour and Pride.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Chronicles of a Tale Foretold/02_The Eyes of a Mother.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Chronicles of a Tale Foretold/03_Home is Where the Heart is.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Chronicles of a Tale Foretold/04_Unbound.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Chronicles of a Tale Foretold/05_Hereditary.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Chronicles of a Tale Foretold/06_Light and Darkness.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Chronicles of a Tale Foretold/07_Tale as Old as Time.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Wrinkles in Time/01_The Imperial Symmetry.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Wrinkles in Time/02_Window to the World_.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Wrinkles in Time/03_Patterns Up Above.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Wrinkles in Time/04_The Golden Point_.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Wrinkles in Time/05_Inside Out.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Wrinkles in Time/06_Duality.jpg',
-        '/projects/Shekhawati - The Cradle of Life/Wrinkles in Time/07_At the Gates of Heaven.jpg',
-        '/projects/The Great Pilgrimage/01_In the Blue Haze.jpg',
-        '/projects/The Great Pilgrimage/02_Ceremonies and Contemplations.jpg',
-        '/projects/The Great Pilgrimage/03_Conversations in Between.jpg',
-        '/projects/The Great Pilgrimage/04_The Endless Journey.jpg',
-        '/projects/The Great Pilgrimage/05_The Motif of a Floating Saree.jpg',
-        '/projects/The Great Pilgrimage/06_In a Moment of Soliloquy.jpg',
-        '/projects/The Great Pilgrimage/07_Faith.jpg',
-        '/projects/The Great Pilgrimage/08_The One Above All.jpg',
-        '/projects/The Great Pilgrimage/09_Songs of Devotion.jpg',
-        '/projects/The Great Pilgrimage/10_Eyes of Wonder.jpg',
-        '/projects/The Great Pilgrimage/11_The Joy of Life.jpg',
-        '/projects/The Great Pilgrimage/12_Wind of Change.jpg',
-        '/projects/The Great Pilgrimage/13_Unity.jpg',
-        '/projects/The Great Pilgrimage/14_The Hero Among Us.jpg',
-        '/projects/The Great Pilgrimage/15_The Mythological Horse of Ringan.jpg',
-        '/projects/The Great Pilgrimage/16_Dancers of the Earth.jpg',
-        '/projects/The Great Pilgrimage/17_The Gate to Infinity.jpg',
-        '/projects/The Great Pilgrimage/Additional/Footer Image.jpg',
-        '/projects/The Great Pilgrimage/Additional/Footer Image(1).jpg',
-        '/projects/The Great Pilgrimage/Additional/Header Image.jpg',
-        '/projects/The Great Pilgrimage/Additional/Header Image(1).jpg',
-        '/projects/The Great Pilgrimage/Additional/Main.jpg',
-        '/projects/The Great Pilgrimage/Additional/PBS07975.jpg',
-        '/projects/The Great Pilgrimage/Additional/Preamble.jpg',
-        '/projects/The Great Pilgrimage/Additional/Project Logo.jpg',
-        '/projects/The River and its People/01_The Flow of Civilization.jpg',
-        '/projects/The River and its People/02_Perspectives of Emotions.jpg',
-        '/projects/The River and its People/03.jpg',
-        '/projects/The River and its People/04.jpg',
-        '/projects/The River and its People/05.jpg',
-        '/projects/The River and its People/06.jpg',
-        '/projects/The River and its People/07_Gently flows the river.jpg',
-        '/projects/The River and its People/08_.jpg',
-        '/projects/The River and its People/09_Loopholes in Time.jpg',
-        '/projects/The River and its People/10_The Shape of Water.jpg',
-        '/projects/The River and its People/11_Call of the River.jpg',
-        '/projects/The River and its People/12_The Immortal Remains.jpg',
-        '/projects/The River and its People/13.jpg',
-        '/projects/The River and its People/14.jpg',
-        '/projects/The River and its People/15_.jpg',
-    ]
 
     const scaleonSelect = (select) => {
         if (select) {
@@ -129,7 +48,7 @@ const Gallery = () => {
 
     const yearOnSelect = (select) => {
         if (select) {
-            return "border-l-4 pl-2  border-black";
+            return "lg:border-l-4 lg:border-b-0 border-b-2 lg:pl-2   border-black";
         }
         return "border-l-0";
     }
@@ -220,16 +139,16 @@ const Gallery = () => {
             </Head>
             <Navbar />
 
-            <div className="mx-[7.5vw] grid grid-cols-5 gap-5">
-                <div className="col-span-4 flex flex-col ">
+            <div className="mx-[7.5vw] grid lg:grid-cols-5 grid-cols-1 gap-5">
+                <div className="lg:col-span-4 col-span-5 flex flex-col ">
                     {/* category */}
-                    <div className="flex flex-row justify-start items-center gap-10 pt-6 overflow-y-hidden">
+                    <div className="flex flex-row justify-start items-center lg:gap-10 gap-5  pt-6 overflow-y-hidden !overflow-x-scroll">
                         {
                             Category.map(
                                 (item, index) => {
                                     return (
-                                        <div key={index} className="flex flex-row justify-center items-center cursor-pointer">
-                                            <div className={`${categoryOnSelect(category === item)} text-black capitalize font-Montserrat text-xl leading-[29.26px] `}
+                                        <div key={index} className="flex flex-row justify-center items-center cursor-pointer text-ellipsis min-w-fit">
+                                            <div className={`${categoryOnSelect(category === item)} text-black text-ellipsis capitalize font-Montserrat lg:text-xl lg:leading-[29.26px] `}
                                                 onClick={(e) => {
                                                     setcategory(
                                                         item
@@ -244,14 +163,14 @@ const Gallery = () => {
 
                     </div>
 
-                    <div className="flex flex-row justify-center pt-10">
-                        <div className="basis-1/4">
-                            <div className="flex flex-col justify-start items-start gap-8 py-10 pl-10">
+                    <div className="flex flex-col lg:flex-row justify-center pt-10 ">
+                        <div className="lg:basis-1/4 lg:!order-1 !order-2 overflow-x-scroll">
+                            <div className="flex lg:flex-col justify-start items-start gap-8 py-10 pl-10">
                                 {
                                     Year.reverse().map((item, index) => {
                                         return (
-                                            <div key={index} className={`${scaleonSelect(year === item)}flex flex-row justify-start items-start cursor-pointer`}>
-                                                <div className={`${yearOnSelect(year === item)} text-black capitalize font-Poppins text-3xl leading-[29.26px] font-normal `}
+                                            <div key={index} className={`${scaleonSelect(year === item)}flex flex-row justify-start items-start cursor-pointer w-10`}>
+                                                <div className={`${yearOnSelect(year === item)} text-black capitalize font-Poppins lg:text-3xl lg:leading-[29.26px] font-normal `}
                                                     onClick={(e) => {
                                                         setyear(
                                                             item
@@ -266,7 +185,7 @@ const Gallery = () => {
                             </div>
                         </div>
                         {/* main picture */}
-                        <div className="basis-3/4 h-[500px]">
+                        <div className="lg:basis-3/4 lg:h-[500px] min-h-[30vh] !order-1 lg:!order-2">
                             <div className="flex flex-col justify-center items-center">
                                 {mainsatge &&
                                     <PhotoProvider
@@ -279,7 +198,7 @@ const Gallery = () => {
                                                     <Image src={mainsatge?.path}
                                                         alt="featured_image"
                                                         draggable={false}
-                                                        className='rounded-md drop-shadow-2xl cursor-grab !w-full !h-[50vh]'
+                                                        className='rounded-md drop-shadow-2xl cursor-zoom-in !w-full lg:h-[50vh] h-full'
                                                         width={500} height={500} />
                                                     <div className="flex justify-start items-start text-start w-full">
                                                         <p className="font-Poppins font-semibold text-base italic text-start">{mainsatge?.name}</p>
@@ -295,30 +214,35 @@ const Gallery = () => {
                 </div>
 
                 {/* gallery side bar */}
-                <div className="col-span-1  !overflow-y-scroll lg:h-[87vh] ">
-                    <div className="flex flex-col justify-center items-center gap-5 px-5 snap-y ">
-                        {sidestage &&
-                            sidestage?.map((item, index) => {
-                                return (
-                                    <div key={index} className='break-inside-avoid snap-center'
-                                        onClick={
-                                            (e) => {
-                                                setMainstage(item)
+                <div className="lg:col-span-1 col-span-5 pb-28 lg:pb-0">
+                    <div className="flex lg:flex-col overflow-scroll  lg:h-[87vh] ">
+                        <div className="flex flex-row gap-5 lg:flex-col justify-center items-center lg:gap-5 lg:px-5">
+                            {sidestage &&
+                                sidestage?.map((item, index) => {
+                                    return (
+                                        <div key={index} className='break-inside-avoid snap-center w-[150px] h-[150px]'
+                                            onClick={
+                                                (e) => {
+                                                    setMainstage(item)
+                                                }
                                             }
-                                        }
-                                    >
-                                        <Image src={item.path}
-                                            draggable={false}
-                                            alt="featured_image"
-                                            className='rounded-md drop-shadow-2xl cursor-pointer !w-full !h-full hover:grayscale-0 transition-all grayscale'
-                                            width={500} height={500} />
-                                    </div>
-                                );
-                            })
-                        }
+                                        >
+                                            <Image src={item.path}
+                                                draggable={false}
+                                                alt="featured_image"
+                                                className='rounded-md drop-shadow-2xl bg-cover cursor-pointer w-full h-full hover:grayscale-0 transition-all grayscale'
+                                                width={500} height={500} />
+                                        </div>
+                                    );
+                                })
+                            }
+                        </div>
                     </div>
                 </div>
             </div >
+
+
+
             <DockerNav isVisible={true} />
             <MobileDockerNav isVisible={true} />
         </div >
