@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Montserrat, Poppins } from '@next/font/google'
-import { ArrowLinkIcon, BirlaAww, ForbsLogo, ForbTag, heroCamera, IndicaAww, SonyAww, Thinstar } from './assets'
+import { ArrowLinkIcon, BirlaAww, ForbsLogo, ForbTag, heroCamera, IndicaAww, mobileAww, SonyAww, Thinstar } from './assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Navbar } from '../common'
@@ -166,9 +166,16 @@ const Hero = () => {
           ref={el => { awwRef = el }}
           className="flex items-baseline m-9 gap-[5vw] pl-[18vw] opacity-0"
         >
-          <SonyAww className="w-36" />
-          <BirlaAww className="w-48" />
-          <IndicaAww className="w-40" />
+
+          {/* <div className='lg:flex hidden gap-[5vw]'>
+            <SonyAww />
+            <BirlaAww />
+            <IndicaAww />
+          </div> */}
+
+
+
+          <Image draggable={false} src={mobileAww} alt="mobile" className="" />
 
           <Link href="/work">
             <div className="flex space-x-2 text-sm font-semibold pb-9 hover:-translate-y-1 hover:scale-110 duration-700 transition ease-in-out delay-150">

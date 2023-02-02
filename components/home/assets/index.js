@@ -6,6 +6,7 @@ import SonyAww from "./sonyAww.svg";
 import BirlaAww from "./birlaAww.svg";
 import IndicaAww from "./indicaAww.svg";
 import ArrowLinkIcon from "./ion_arrow-back-circle.svg";
+import mobileAww from "./mobileAww.png";
 
 // works seen on
 import Forbes_Logo from "./Forbes_Logo.png";
@@ -39,6 +40,7 @@ export {
   Edugraph_Logo,
   SonyWPO_Logo,
   LinkLogo,
+  mobileAww,
   photo1,
   photo2,
   photo3,
