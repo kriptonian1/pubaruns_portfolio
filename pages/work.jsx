@@ -25,52 +25,53 @@ function Work() {
 
           {/* mobile viewpoint for feeds */}
           <div className="flex flex-col">
-
-            {
-              ActiveArticle === "featured" && featureData.map((item, index) => {
-                return (
-                  <ArticleCard
-                    key={index}
-                    title={item.title}
-                    description={item.description}
-                    link={item.link}
-                    logo={item.image}
-                    alt={item.alt}
-                  />
-                );
+            <div className="h-[400px]">
+              {
+                ActiveArticle === "featured" && featureData.map((item, index) => {
+                  return (
+                    <ArticleCard
+                      key={index}
+                      title={item.title}
+                      description={item.description}
+                      link={item.link}
+                      logo={item.image}
+                      alt={item.alt}
+                    />
+                  );
+                }
+                )
               }
-              )
-            }
-            {
-              ActiveArticle === "awards" && awardData.map((item, index) => {
-                return (
-                  <ArticleCard
-                    key={index}
-                    title={item.title}
-                    description={item.description}
-                    link={item.link}
-                    logo={item.image}
-                    alt={item.alt}
-                  />
-                );
+              {
+                ActiveArticle === "awards" && awardData.map((item, index) => {
+                  return (
+                    <ArticleCard
+                      key={index}
+                      title={item.title}
+                      description={item.description}
+                      link={item.link}
+                      logo={item.image}
+                      alt={item.alt}
+                    />
+                  );
+                }
+                )
               }
-              )
-            }
-            {
-              ActiveArticle === "worked" && workData.map((item, index) => {
-                return (
-                  <ArticleCard
-                    key={index}
-                    title={item.title}
-                    description={item.description}
-                    link={item.link}
-                    logo={item.image}
-                    alt={item.alt}
-                  />
-                );
+              {
+                ActiveArticle === "worked" && workData.map((item, index) => {
+                  return (
+                    <ArticleCard
+                      key={index}
+                      title={item.title}
+                      description={item.description}
+                      link={item.link}
+                      logo={item.image}
+                      alt={item.alt}
+                    />
+                  );
+                }
+                )
               }
-              )
-            }
+            </div>
           </div>
         </div>
 

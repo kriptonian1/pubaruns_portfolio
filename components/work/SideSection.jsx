@@ -18,29 +18,29 @@ const SideSection = ({
 
     const lineOnSelect = (select) => {
         if (select) {
-            return "w-[200px]";
+            return "lg:w-[200px] !w-[100px]";
         }
-        return "w-[100px]";
+        return "lg:w-[100px] !w-[50px]";
     }
     return (
-        <div className="flex ">
-            <div className='fixed mt-[13vh] gap-[8vw] flex flex-col left-0 text-[#373737]'>
+        <div className="flex">
+            <div className='fixed lg:mt-[13vh] lg:py-0 py-5 gap-[8vw] flex flex-col left-0 text-[#373737]'>
 
-                <div onClick={() => setisActive("awards")} className={`${scaleonSelect(isactive === "awards")} flex cursor-pointer items-center text-lg font-semibold`}>
+                <div onClick={() => setisActive("awards")} className={`${scaleonSelect(isactive === "awards")} flex cursor-pointer items-center lg:text-lg font-semibold`}>
                     <div className={`${lineOnSelect(isactive === "awards")} border border-[#000000] h-0 w-[200px] mr-[1rem]`}></div>
                     <button>
                         AWARDS
                     </button>
 
                 </div>
-                <div onClick={() => setisActive("featured")} className={`${scaleonSelect(isactive === "featured")} flex cursor-pointer items-center text-lg font-semibold`}>
+                <div onClick={() => setisActive("featured")} className={`${scaleonSelect(isactive === "featured")} flex cursor-pointer items-center lg:text-lg font-semibold`}>
                     <div className={`${lineOnSelect(isactive === "featured")} border border-[#000000] h-0 w-[200px] mr-[1rem]`}></div>
                     <button>
                         FEATURED ON
                     </button>
 
                 </div>
-                <div onClick={() => setisActive("worked")} className={`${scaleonSelect(isactive === "worked")} flex cursor-pointer items-center text-lg font-semibold`}>
+                <div onClick={() => setisActive("worked")} className={`${scaleonSelect(isactive === "worked")} flex cursor-pointer items-center lg:text-lg font-semibold`}>
                     <div className={` ${lineOnSelect(isactive === "worked")} border border-[#000000] h-0 w-[200px] mr-[1rem]`}></div>
                     <button>
                         WORKED WITH
@@ -48,7 +48,7 @@ const SideSection = ({
 
                 </div>
             </div>
-            <div className="fixed   left-[40vw] border border-[#000000] w-0 h-[84vh] my-4 "></div>
+            <div className="fixed hidden lg:flex  left-[40vw] border border-[#000000] w-0 h-[84vh] my-4 "></div>
         </div>
 
     )
