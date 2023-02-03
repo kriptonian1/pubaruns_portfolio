@@ -13,7 +13,7 @@ const Gallery = () => {
 
     const [mainsatge, setMainstage] = useState()
     const [sidestage, setSidestage] = useState()
-    const [year, setyear] = useState(2023)
+    const [year, setyear] = useState(2022)
     const [category, setcategory] = useState("Conceptual")
 
 
@@ -26,6 +26,36 @@ const Gallery = () => {
         2023,
     ]
 
+    const setYearByCatagory = (catagory) => {
+        if (catagory == "Conceptual") {
+            // setyear(2022)
+            return yearCatagory.Conceptual
+        }
+        if (catagory == "Culture") {
+            return yearCatagory.Culture
+        }
+        if (catagory == "Daily Life") {
+            return yearCatagory["Daily Life"]
+        }
+        if (catagory == "Environment") {
+            return yearCatagory.Environment
+        }
+        if (catagory == "Monochrome") {
+            return yearCatagory.Monochrome
+        }
+        if (catagory == "Portraits") {
+            return yearCatagory.Portraits
+        }
+    }
+
+    const yearCatagory = {
+        Conceptual: [2014, 2016, 2018, 2020, 2021, 2022],
+        Culture: [2017, 2018, 2021, 2022],
+        "Daily Life": [2016, 2020, 2021, 2022],
+        Environment: [2014, 2016, 2018, 2019, 2020, 2021, 2022],
+        Monochrome: [2016, 2018, 2021, 2022],
+        Portraits: [2016, 2021, 2022]
+    }
 
     const Category = [
         "Conceptual",
@@ -167,7 +197,7 @@ const Gallery = () => {
                         <div className="lg:basis-1/4 lg:!order-1 !order-2 overflow-x-scroll">
                             <div className="flex lg:flex-col justify-start items-start gap-8 py-10 pl-10">
                                 {
-                                    Year.reverse().map((item, index) => {
+                                    setYearByCatagory(category).reverse().map((item, index) => {
                                         return (
                                             <div key={index} className={`${scaleonSelect(year === item)}flex flex-row justify-start items-start cursor-pointer w-10`}>
                                                 <div className={`${yearOnSelect(year === item)} text-black capitalize font-Poppins lg:text-3xl lg:leading-[29.26px] font-normal `}

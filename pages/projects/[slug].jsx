@@ -122,7 +122,6 @@ function EachProject({ source }) {
                 <div className='absolute bottom-1 lg:p-10  w-full p-2'>
                     <div className='flex flex-row justify-between '>
                         <div>
-                            {/* ! to be fixed */}
                             {/* <p className='text-white font-Poppins'>{source.commissioned_image} </p> */}
                             {
                                 source.commissioned_image
@@ -214,7 +213,7 @@ function EachProject({ source }) {
                                                     <Image
                                                         width={1500} height={500}
 
-                                                        src={item} loading={'lazy'} alt="featured_image" className='rounded-md drop-shadow-2xl cursor-grab' />
+                                                        src={item} loading={'lazy'} alt="featured_image" className='rounded-md drop-shadow-2xl cursor-zoom-in' />
                                                 </div>
                                             </PhotoView>
                                         ))}
@@ -262,7 +261,7 @@ function EachProject({ source }) {
                                 <PhotoView src={source.footerimage}>
                                     <div className='break-inside-avoid'>
                                         {console.log(source.footerimage)}
-                                        <Image src={source.footerimage} loading={'lazy'} placeholder={""} width={1000} height={0} alt="Footer Image" draggable={false} className='rounded-md drop-shadow-2xl' />
+                                        <Image src={source.footerimage} loading={'lazy'} placeholder={""} width={1000} height={0} alt="Footer Image" draggable={false} className='rounded-md drop-shadow-2xl cursor-zoom-in' />
                                     </div>
                                 </PhotoView>
                             </div>
