@@ -1,18 +1,18 @@
 [
   {
-    "name": "A Smiling Escape",
+    "name": "Enchanted",
     "year": 2023,
     "path": "/gallery/Conceptual/_PB08180.jpg",
     "category": "Conceptual"
   },
   {
-    "name": "No Escape from Reality",
+    "name": "Light and Darkness",
     "year": 2023,
-    "path": "/gallery/Conceptual/_PB08811.jpg",
+    "path": "/gallery/Conceptual/Lightandd.jpg",
     "category": "Conceptual"
   },
   {
-    "name": "Desolation_",
+    "name": "Desolation",
     "year": 2023,
     "path": "/gallery/Conceptual/Desolation_.jpg",
     "category": "Conceptual"
@@ -30,7 +30,7 @@
     "category": "Conceptual"
   },
   {
-    "name": "Rêverie",
+    "name": "Reverie",
     "year": 2023,
     "path": "/gallery/Conceptual/Rêverie.jpg",
     "category": "Conceptual"
@@ -60,33 +60,27 @@
     "category": "Culture"
   },
   {
-    "name": "Dance of Eternity",
+    "name": "Grandeur",
     "year": 2023,
     "path": "/gallery/Culture/Grandeur_.jpg",
     "category": "Culture"
   },
   {
-    "name": "Dance of Eternity",
+    "name": "March of the Devotees",
     "year": 2023,
     "path": "/gallery/Culture/March of the Devotees.jpg",
     "category": "Culture"
   },
   {
-    "name": "Dance of Eternity",
+    "name": "Creating the Creator",
     "year": 2023,
     "path": "/gallery/Culture/PB0_1201.jpg",
     "category": "Culture"
   },
   {
-    "name": "PBS02533",
+    "name": "Girls in the City",
     "year": 2023,
-    "path": "/gallery/Culture/PBS02533.jpg",
-    "category": "Culture"
-  },
-  {
-    "name": "PBS08013",
-    "year": 2023,
-    "path": "/gallery/Culture/PBS08013.jpg",
+    "path": "/gallery/Culture/girlincity.jpg",
     "category": "Culture"
   },
   {
@@ -114,13 +108,13 @@
     "category": "Culture"
   },
   {
-    "name": "Nostalgia_",
+    "name": "Nostalgia",
     "year": 2023,
     "path": "/gallery/Daily Life/Nostalgia_.jpg",
     "category": "Daily Life"
   },
   {
-    "name": "PBS02555",
+    "name": "The Matrilineal Way of Life",
     "year": 2023,
     "path": "/gallery/Daily Life/PBS02555.jpg",
     "category": "Daily Life"
@@ -168,19 +162,19 @@
     "category": "Daily Life"
   },
   {
-    "name": "_PB08737",
+    "name": "The Watcher",
     "year": 2023,
     "path": "/gallery/Environment/_PB08737.jpg",
     "category": "Environment"
   },
   {
-    "name": "_PB09550",
+    "name": "Nature's Canvas",
     "year": 2023,
     "path": "/gallery/Environment/_PB09550.jpg",
     "category": "Environment"
   },
   {
-    "name": "_PB09722",
+    "name": "Patterns in Nature",
     "year": 2023,
     "path": "/gallery/Environment/_PB09722.jpg",
     "category": "Environment"
@@ -198,13 +192,13 @@
     "category": "Environment"
   },
   {
-    "name": "Game of Colours_",
+    "name": "Game of Colours",
     "year": 2023,
     "path": "/gallery/Environment/Game of Colours_.jpg",
     "category": "Environment"
   },
   {
-    "name": "Game of Colours_(1)",
+    "name": "Game of Colours",
     "year": 2023,
     "path": "/gallery/Environment/Game of Colours_(1).jpg",
     "category": "Environment"
@@ -216,25 +210,25 @@
     "category": "Environment"
   },
   {
-    "name": "PB0_1608",
+    "name": "singularity",
     "year": 2023,
     "path": "/gallery/Environment/PB0_1608.jpg",
     "category": "Environment"
   },
   {
-    "name": "Transience_",
+    "name": "Transience",
     "year": 2023,
     "path": "/gallery/Environment/Transience_.jpg",
     "category": "Environment"
   },
   {
-    "name": "_PB05465bw",
+    "name": "The Devotee",
     "year": 2023,
     "path": "/gallery/Monochrome/_PB05465bw.jpg",
     "category": "Monochrome"
   },
   {
-    "name": "_PB08452",
+    "name": "Gently Flows the River",
     "year": 2023,
     "path": "/gallery/Monochrome/_PB08452.jpg",
     "category": "Monochrome"
@@ -258,7 +252,7 @@
     "category": "Monochrome"
   },
   {
-    "name": "Reincarnation_",
+    "name": "Reincarnation",
     "year": 2023,
     "path": "/gallery/Monochrome/Reincarnation_.jpg",
     "category": "Monochrome"
@@ -288,25 +282,25 @@
     "category": "Monochrome"
   },
   {
-    "name": "_PB01004",
+    "name": "The Shepherd's Pastures",
     "year": 2023,
     "path": "/gallery/Portraits/_PB01004.jpg",
     "category": "Portraits"
   },
   {
-    "name": "_PB08162",
+    "name": "Of Valour and Pride",
     "year": 2023,
     "path": "/gallery/Portraits/_PB08162.jpg",
     "category": "Portraits"
   },
   {
-    "name": "_PB08353",
+    "name": "Mistress of Mandawa",
     "year": 2023,
     "path": "/gallery/Portraits/_PB08353.jpg",
     "category": "Portraits"
   },
   {
-    "name": "_PB09869",
+    "name": "Festive Fervour",
     "year": 2023,
     "path": "/gallery/Portraits/_PB09869.jpg",
     "category": "Portraits"
@@ -318,7 +312,7 @@
     "category": "Portraits"
   },
   {
-    "name": "Copy of _PB00070",
+    "name": "The Gentleness of Garo Life",
     "year": 2023,
     "path": "/gallery/Portraits/Copy of _PB00070.jpg",
     "category": "Portraits"
@@ -330,13 +324,13 @@
     "category": "Portraits"
   },
   {
-    "name": "In the Name of God",
+    "name": "Marks of Resistance ",
     "year": 2023,
     "path": "/gallery/Portraits/In the Name of God.jpg",
     "category": "Portraits"
   },
   {
-    "name": "PBS07615",
+    "name": "The Warkari",
     "year": 2023,
     "path": "/gallery/Portraits/PBS07615.jpg",
     "category": "Portraits"
