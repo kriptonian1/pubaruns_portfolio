@@ -54,9 +54,9 @@ const MobileDockerNav = ({ isVisible }) => {
                     }>
                         <div className='flex justify-center items-center'>
                             <svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="1.5" y1="1" x2="32.5" y2="1" stroke="#C9C9C9" strokeWidth="2" stroke-linecap="round" />
-                                <line x1="1.5" y1="10" x2="32.5" y2="10" stroke="#C9C9C9" strokeWidth="2" stroke-linecap="round" />
-                                <line x1="1.5" y1="19" x2="32.5" y2="19" stroke="#C9C9C9" strokeWidth="2" stroke-linecap="round" />
+                                <line x1="1.5" y1="1" x2="32.5" y2="1" stroke="#C9C9C9" strokeWidth="2" strokeLinecap="round" />
+                                <line x1="1.5" y1="10" x2="32.5" y2="10" stroke="#C9C9C9" strokeWidth="2" strokeLinecap="round" />
+                                <line x1="1.5" y1="19" x2="32.5" y2="19" stroke="#C9C9C9" strokeWidth="2" strokeLinecap="round" />
                             </svg>
                         </div>
                     </div>

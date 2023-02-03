@@ -164,7 +164,7 @@ const Gallery = () => {
                     </div>
 
                     <div className="flex flex-col lg:flex-row justify-center pt-10 ">
-                        <div className="lg:basis-1/4 lg:!order-1 !order-2 overflow-x-scroll">
+                        {/* <div className="lg:basis-1/4 lg:!order-1 !order-2 overflow-x-scroll">
                             <div className="flex lg:flex-col justify-start items-start gap-8 py-10 pl-10">
                                 {
                                     Year.reverse().map((item, index) => {
@@ -183,9 +183,9 @@ const Gallery = () => {
                                     )
                                 }
                             </div>
-                        </div>
+                        </div> */}
                         {/* main picture */}
-                        <div className="lg:basis-3/4 lg:h-[500px] min-h-[30vh] !order-1 lg:!order-2">
+                        <div className="lg:basis-3/4 min-h-[30vh] !order-1 lg:!order-2">
                             <div className="flex flex-col justify-center items-center">
                                 {mainsatge &&
                                     <PhotoProvider
@@ -198,7 +198,8 @@ const Gallery = () => {
                                                     <Image src={mainsatge?.path}
                                                         alt="featured_image"
                                                         draggable={false}
-                                                        className='rounded-md drop-shadow-2xl cursor-zoom-in !w-full lg:h-[50vh] h-full'
+                                                        quality={100}
+                                                        className='rounded-md drop-shadow-2xl object-contain cursor-zoom-in !w-full lg:h-[60vh] h-full'
                                                         width={500} height={500} />
                                                     <div className="flex justify-start items-start text-start w-full">
                                                         <p className="font-Poppins font-semibold text-base italic text-start">{mainsatge?.name}</p>
@@ -214,9 +215,9 @@ const Gallery = () => {
                 </div>
 
                 {/* gallery side bar */}
-                <div className="lg:col-span-1 col-span-5 pb-28 lg:pb-0">
-                    <div className="flex lg:flex-col overflow-scroll  lg:h-[87vh] ">
-                        <div className="flex flex-row gap-5 lg:flex-col justify-center items-center lg:gap-5 lg:px-5">
+                <div className="lg:col-span-1 col-span-5  translate-y-7">
+                    <div className="flex lg:flex-col overflow-scroll lg:h-[87vh] ">
+                        <div className="flex flex-row gap-5 lg:flex-col justify-center items-center lg:gap-1 lg:px-5">
                             {sidestage &&
                                 sidestage?.map((item, index) => {
                                     return (
