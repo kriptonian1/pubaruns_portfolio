@@ -44,7 +44,7 @@ const MobileDockerNav = ({ isVisible }) => {
         <div className='flex lg:hidden justify-center '>
             <nav style={{ visibility: isVisible ? 'visible' : 'hidden' }} className={`fixed z-[999] flex justify-evenly items-center bottom-9 transition-all duration-200 ${isVisible ? 'opacity-100 visible' : 'hidden opacity-0'}  shadow-2xl flex gap-7 text-[#DCDCDC] bg-[#3e3e3ecc] border-[10px] backdrop-blur-sm md:px-[15px] px-2 md:py-[5px] border-[#0000001a] md:w-[40rem] w-[15rem] md:rounded-[20px] rounded-[20px]`}>
                 <div>
-                    <h1 className='capitalize py-[10px] transition-all rounded-md duration-500  font-semibold  px-[10px]'>{currrentRoute}</h1>
+                    <h1 className='capitalize py-[10px] transition-all rounded-md duration-500  font-semibold  px-[10px]'>{currrentRoute.split("/")[0]}</h1>
                 </div>
                 <div className='relative'>
                     <div className='cursor-pointer' onClick={
