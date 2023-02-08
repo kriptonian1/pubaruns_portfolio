@@ -99,7 +99,7 @@ const Hero = () => {
         target={"_blank"}
         className="md:block hidden"
       >
-        <ForbTag className="right-0 bottom-[10vh] absolute" />
+        <ForbTag className="right-0 bottom-[10vh] absolute z-10" />
       </a>
 
       {/* Sidebar social */}

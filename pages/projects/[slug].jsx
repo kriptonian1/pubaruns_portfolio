@@ -100,7 +100,6 @@ function EachProject({ source }) {
 
             <div className='conatiner mx-auto bg-black mt-10 lg:mx-16 rounded-md relative'>
 
-                {console.log(source.image)}
 
                 <Image
                     priority={true}
@@ -180,7 +179,7 @@ function EachProject({ source }) {
                 </div>
 
                 <div className='lg:basis-2/5 flex justify-center items-center'>
-                    <Image src={source.featuredimage} loading={'lazy'} alt="featured_image" width={500} height={500} className='rounded-md drop-shadow-2xl' />
+                    <Image src={source.featuredimage} draggable={false} loading={'lazy'} alt="featured_image" width={500} height={500} className='rounded-md drop-shadow-2xl' />
 
                 </div>
 
@@ -213,8 +212,8 @@ function EachProject({ source }) {
                                                 <div className='break-inside-avoid'>
                                                     <Image
                                                         width={1500} height={500}
-
-                                                        src={item} loading={'lazy'} alt="featured_image" className='rounded-md drop-shadow-2xl cursor-grab' />
+                                                        draggable={false}
+                                                        src={item} loading={'lazy'} alt="featured_image" className='rounded-md drop-shadow-2xl cursor-zoom-in' />
                                                 </div>
                                             </PhotoView>
                                         ))}
@@ -237,7 +236,7 @@ function EachProject({ source }) {
                                 <div className='flex flex-row justify-center items-center'>
                                     <div>
                                         <Image src={source.buyat.coverbookimage} width={500} height={500} alt={source.buyat.name}
-                                            className='w-full h-full rounded-md' />
+                                            className='w-full h-full rounded-md ' />
                                     </div>
 
                                 </div>
@@ -261,8 +260,8 @@ function EachProject({ source }) {
                             <div className="columns-1 gap-3 lg:w-[1000px] mx-auto lg:space-y-3 space-y-2 mb-2">
                                 <PhotoView src={source.footerimage}>
                                     <div className='break-inside-avoid'>
-                                        {console.log(source.footerimage)}
-                                        <Image src={source.footerimage} loading={'lazy'} placeholder={""} width={1000} height={0} alt="Footer Image" draggable={false} className='rounded-md drop-shadow-2xl' />
+                                        
+                                        <Image src={source.footerimage} loading={'lazy'} placeholder={""} width={1000} height={0} alt="Footer Image" draggable={false} className='rounded-md drop-shadow-2xl cursor-zoom-in' />
                                     </div>
                                 </PhotoView>
                             </div>

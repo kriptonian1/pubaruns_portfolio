@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { HeadLinesHome } from '../common'
-import { Edugraph_Logo, Forbes_Logo, Goethe_Logo, LinkLogo, NatGeo_Logo, SonyWPO_Logo, Thehindu_Logo } from './assets'
+import { BBC_logo, Forbes_Logo, Goethe_Logo, LinkLogo, NatGeo_Logo, SonyWPO_Logo, Thehindu_Logo } from './assets'
 
 const WorkSeen = () => {
 
@@ -11,7 +11,7 @@ const WorkSeen = () => {
         NatGeo_Logo,
         Thehindu_Logo,
         Goethe_Logo,
-        Edugraph_Logo,
+        BBC_logo,
         SonyWPO_Logo
     ]
 
